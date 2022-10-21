@@ -1,0 +1,656 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap');
+
+html{
+  background-color: #FAF7F2;
+}
+
+/* Styling the font */
+/* Resource from https://help.proprofskb.com/manage-css */
+body {
+  font-family: 'Inconsolata', sans-serif;
+  padding: 2rem;
+  color: #36383A;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.10rem;
+  border-top-style: solid;
+  border-top-color: #DCDCDC;
+}
+
+hr {
+  border-color: #DCDCDC;
+  border-top-color: #DCDCDC;
+}
+
+h1{
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  color: #36383A;
+}
+
+h2 {
+  font-family: 'Karla', sans-serif;
+  margin-top: 6rem;
+  padding: 0rem;
+  color: #BDC99C;
+}
+
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  margin-top: 1rem;
+  color: #7F8387;
+}
+
+h4 {
+  font-family: 'Karla', sans-serif;
+  margin-bottom: 1rem;
+  color: #36383A;
+}
+
+h5 {
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 0.25rem;
+  color: #36383A;
+}
+
+p {
+  font-family: 'Inconsolata', sans-serif;
+  margin-top: 0;
+  color: #36383A;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  font-family: 'Inconsolata', sans-serif;
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/*
+  MAIN NAVIGATION BAR -------------------
+*/
+/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
+ul {
+  list-style-type: none;
+  margin-top: 2rem;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FAF7F2;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: 1px 2px 6px #E4E3E3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #99BDDF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: #F8EFAF;
+}
+
+.active {
+  color: #C3D493;
+}
+
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the in-text link */
+/* Resource from https://medium.com/geekculture/css-link-style-53adb595b4d */
+.text-link a {
+  color: #99BDDF;
+}
+
+.text-link a:hover, .text-link a:focus{
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #5D6165;
+  background-color: #F6EEB1;
+  transition-duration: 0.5s;
+}
+
+/* Styling for the navigation button & link */
+/* Resource from https://www.w3schools.com/css/css_navbar.asp */
+.nav_link{
+  width: 6.5%;
+  list-style-type: none;
+  margin-top: 2rem;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FAF7F2;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: 1px 2px 6px #E4E3E3;
+}
+
+.button-nav {
+  display: inline-block;
+  padding: 0.75rem;
+  color: #FFFDFB;
+  border-radius: 6px;
+  background-color: #99BDDF;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #5D6165;
+  border-radius: 6px;
+  background-color: #F6EEB1;
+  transition-duration: 0.5s;
+}
+
+
+/* Styling for the submit & reset */
+/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
+/* Resource from https://www.w3schools.com/css/css_form.asp */
+.submit-reset label{
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #36383A;
+}
+
+.submit-reset input[type="text"] {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  color: #36383A;
+  width: 40%;
+  padding: 10px 10px;
+  margin: 8px 1px;
+  box-sizing: border-box;
+  border: 2px solid #99BDDF;
+  border-radius: 6px;
+  transition: 0.5s;
+  outline: none;
+  background-color: #FAF7F2;
+}
+
+input[type="text"]:hover {
+  outline: none;
+  border: 2px solid #F8EFAF;
+  border-radius: 6px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #F8EFAF;
+  border-radius: 6px;
+  color: #36383A;
+  background-color: #FBF7DD;
+}
+
+.button-sr {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0.75rem;
+  color: #FFFDFB;
+  border-radius: 6px;
+  background-color: #99BDDF;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border: none;
+}
+
+.button-sr:hover, .button-nav:focus {
+  color: #5D6165;
+  border-radius: 6px;
+  background-color: #F6EEB1;
+  transition-duration: 0.5s;
+  border: none;
+}
+
+
+/* Styling for the text input field */
+/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
+/* Resource from https://www.w3schools.com/css/css_form.asp */
+.box-form label{
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #36383A;
+}
+
+.box-form input[type="text"] {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  color: #36383A;
+  width: 40%;
+  padding: 10px 10px;
+  margin: 8px 1px;
+  box-sizing: border-box;
+  border: 2px solid #99BDDF;
+  border-radius: 6px;
+  transition: 0.5s;
+  outline: none;
+  background-color: #FAF7F2;
+}
+
+input[type="text"]:hover {
+  outline: none;
+  border: 2px solid #F8EFAF;
+  border-radius: 6px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #F8EFAF;
+  border-radius: 6px;
+  color: #36383A;
+  background-color: #FBF7DD;
+}
+
+
+/* Styling for the radio button */
+/* Resource from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container{
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  background-color: #EEE;
+}
+
+.stan-del h4{
+  font-weight: bold;
+  color: #C3D493;
+  font-family: 'Inconsolata', sans-serif;
+  margin-left: 2.5rem;
+}
+
+.stan-del p{
+  margin-left: 2.5rem;
+}
+
+.stan-deltwo {
+  margin-left: 2.5rem;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #F8EFAF;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #99BDDF;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  color: #FAF7F2;
+}
+
+/* Styling for the image as a link */
+/* Resource from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.container-img {
+  position: relative;
+  width: 50%;
+}
+
+.image-link {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #C3D493;
+}
+
+.container-img:hover .overlay-img {
+  opacity: 1;
+}
+
+.text-img {
+  color: #FAF7F2;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+/* Styling for the header */
+.head h2{
+  font-family: 'Karla', sans-serif;
+  margin-top: 0rem;
+  padding-left: 0rem;
+  color: #36383A;
+  background-color: #FAF7F2;
+}
+
+.head h3{
+  font-family: 'Karla', sans-serif;
+  margin-top: 0rem;
+  padding-left: 0rem;
+  color: #36383A;
+}
+
+.head h4{
+  font-family: 'Karla', sans-serif;
+  margin-top: 0rem;
+  padding-left: 0rem;
+  color: #36383A;
+}
+
+.head h5{
+  font-family: 'Karla', sans-serif;
+  margin-top: 0rem;
+  padding-left: 0rem;
+  color: #36383A;
+}
+
+/* Styling for the paragraph */
+.para{
+  width: 50%;
+}
+
+
+/* Styling for the numbered lists */
+/* Resource from https://css-tricks.com/css-counters-custom-list-number-styling/ */
+.num-li {
+    list-style: none;
+    counter-reset: num;
+}
+
+.num-li li {
+    counter-increment: num;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    margin-left: 0rem;
+    padding: 1rem;
+}
+
+.num-li li::before {
+    content: "0" counter(num);
+    font-weight: bold;
+    color: #C3D493;
+    font-size: 22px;
+    margin-right: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling the main navigation */
+/* Resource from https://www.w3schools.com/css/css_navbar.asp */
+.nav_main {
+  width: 38%;
+  list-style-type: none;
+  margin-top: 2rem;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FAF7F2;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: 1px 2px 6px #E4E3E3;
+}
+
+/* Styling the product listing */
+/* Resource from https://www.w3schools.com/howto/howto_css_product_card.asp */
+.product {
+  box-shadow: 1px 2px 8px #E4E3E3;
+  max-width: 350px;
+  text-align: center;
+  background-color: #FAF7F2;
+  border-radius: 6px;
+}
+
+.product hr{
+  width: 90%;
+  margin-top: 2rem;
+  border: none;
+  height: 2px;
+  background: #095484;
+  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
+}
+
+.product h3 {
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  margin-top: 1.5rem;
+  margin-left: 0.80rem;
+  color: #36383A;
+  font-size: 18px;
+}
+
+.price {
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 8rem;
+  color: #36383A;
+  font-size: 20px;
+}
+
+.product p{
+font-family: 'Inconsolata', sans-serif;
+text-align: left;
+font-style: normal;
+padding: 1rem;
+color: #36383A;
+font-size: 16px;
+}
+
+.product img{
+  margin: 1rem;
+}
+
+.product img:hover {
+  box-shadow: 1px 2px 8px #E4E3E3;
+}
+
+/* Styling the payment form */
+/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
+/* Resource from https://www.w3schools.com/css/css_form.asp */
+.pay-in label{
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #36383A;
+}
+
+.pay-in input[type="text"] {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  color: #36383A;
+  width: 40%;
+  padding: 10px 10px;
+  margin: 8px 1px;
+  box-sizing: border-box;
+  border: 2px solid #99BDDF;
+  border-radius: 6px;
+  transition: 0.5s;
+  outline: none;
+  background-color: #FAF7F2;
+}
+
+input[type="text"]:hover {
+  outline: none;
+  border: 2px solid #F8EFAF;
+  border-radius: 6px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #F8EFAF;
+  border-radius: 6px;
+  color: #36383A;
+  background-color: #FBF7DD;
+}
+
+.button-pr {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0.75rem;
+  color: #FFFDFB;
+  border-radius: 6px;
+  background-color: #99BDDF;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border: none;
+}
+
+.button-pr:hover, .button-nav:focus {
+  color: #5D6165;
+  border-radius: 6px;
+  background-color: #F6EEB1;
+  transition-duration: 0.5s;
+  border: none;
+}
+
+.pay-in hr{
+  width: 40%;
+  margin-left: 0rem;
+  border: none;
+  height: 2px;
+  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
+}
+
+/* Styling the checkout cart */
+/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
+/* Resource from https://www.w3schools.com/css/css_form.asp */
+.checkout hr{
+  width: 30%;
+  margin-top: 2rem;
+  margin-left: 0rem;
+  border: none;
+  height: 2px;
+  background: #095484;
+  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
+}
+
+.checkout h3 {
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  margin-top: 1.5rem;
+  margin-left: 0rem;
+  color: #36383A;
+  font-size: 18px;
+}
+
+/* Styling paragraph */
+.pstyle{
+  width: 60%;
+}
+
+/* Styling the image */
+.pstyle img{
+  box-shadow: 1px 2px 8px #E4E3E3;
+  margin-bottom: 0.75rem;
+}
+
+/* Resource from https://jonitrythall.com/flexbox-cheatsheet */
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+  }
