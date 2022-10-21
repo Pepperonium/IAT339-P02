@@ -625,18 +625,60 @@ input[type="text"]:focus {
 .dtpro_containter{
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
-.dtpro_containter h3{
-  flex-grow: 1;
+.info_list {
+  /* box-shadow: 1px 2px 8px #E4E3E3; */
+  max-width: 350px;
+  text-align: center;
+  background-color: #FAF7F2;
+  border-radius: 6px;
 }
 
-.dtpro_containter p{
-  flex-grow: 1;
+.info_list hr{
+  width: 90%;
+  margin-top: 1rem;
+  border: none;
+  height: 2px;
+  background: #095484;
+  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
 }
 
+.info_list h3 {
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+  font-style: bold;
+  margin-top: 1.5rem;
+  margin-left: 0.90rem;
+  color: #36383A;
+  font-size: 18px;
+}
 
+.price {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 8rem;
+  color: #36383A;
+  font-size: 20px;
+}
+
+.info_list p{
+font-family: 'Inconsolata', sans-serif;
+text-align: left;
+font-style: normal;
+padding: 0.5rem;
+color: #36383A;
+font-size: 16px;
+}
+
+/* .product1 img{
+  margin: 1rem;
+} */
 
 /* Styling the checkout cart */
 /* Resource from https://www.w3schools.com/css/css3_buttons.asp */
