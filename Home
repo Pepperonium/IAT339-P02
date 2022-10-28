@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-    </head>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Little Bee</title>
+
+    <!-- Connect .css style guide file to html -->
+    <link href="Little Bee css/LBstyle.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation bar -->
+    <div class="nav_bar">
+        <li><a href="">Shop</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="">Quiz</a></li>
+        <li><a href="">Contact</a></li>
+    </div>
+
+    <!-- Main image -->
+    <div class="main_img">
+      <img src="Little Bee images/Landing Image.png" alt="Landing Image" style="width:80%;height:50%;">
+    <div class="bottom-left">
+      <p> A gentle and nourishing
+      <br> skin care perfect for
+      <br> your little ones.</p>
+      <p>See what best suit them.</p>
+      <a class="quiz-button" href="">Take Quiz</a>
+    </div>
+    </div>
+
+  </body>
+
 </html>
