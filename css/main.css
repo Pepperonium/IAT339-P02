@@ -69,10 +69,6 @@ p {
   color: #36383A;
 }
 
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-
 code {
   font-family: 'Inconsolata', sans-serif;
   background-color: #EEE;
@@ -84,6 +80,15 @@ code {
   MAIN NAVIGATION BAR -------------------
 */
 /* Resource from https://www.w3schools.com/css/css3_buttons.asp */
+nav{
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   margin-top: 2rem;
@@ -539,6 +544,7 @@ font-size: 16px;
 
 .product img:hover {
   box-shadow: 1px 2px 8px #E4E3E3;
+  background-color: #C3D493;
 }
 
 .prod_container{
