@@ -7,29 +7,19 @@
     <title>Little Bee</title>
 
     <!-- Connect .css style guide file to html -->
-<<<<<<< Updated upstream
-    <link href="css/main.css" rel="stylesheet">
-=======
     <link href="Little Bee css/LBstyle.css" rel="stylesheet">
->>>>>>> Stashed changes
 
   </head>
 
-  
-  <header>
-    <!-- Navigation bar -->
-    <nav>
-      <ul>
-        <li><a href="Product-Listing.html">Shop</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Quiz.html">Quiz</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
   <body>
+
+    <!-- Navigation bar -->
+    <div class="nav_bar">
+        <li><a href="">Shop</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="">Quiz</a></li>
+        <li><a href="">Contact</a></li>
+    </div>
 
     <!-- Main image -->
     <div class="main_img">
