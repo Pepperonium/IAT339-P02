@@ -81,6 +81,7 @@ code {
 */
 /* Resource from https://www.w3schools.com/css/css3_buttons.asp */
 nav{
+  position: -webkit-sticky;
   position: sticky;
 }
 
