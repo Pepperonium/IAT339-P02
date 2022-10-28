@@ -759,3 +759,6 @@ font-size: 16px;
   top: 25rem;
 }
 
+.about_context p{
+  width: 50%;
+}
