@@ -18,6 +18,8 @@ body {
 }
 
 .element {
+  /* display: flex;*/
+  flex: 1;
   padding-bottom: 2rem;
   border-top-width: 0.10rem;
   border-top-style: solid;
@@ -365,9 +367,12 @@ input[type="text"]:focus {
 
 /* Styling for the image as a link */
 /* Resource from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
-.container-img {
+.product-img {
+  flex: 1;
+  flex-wrap: wrap;
+  flex-grow: 10;
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .image-link {
@@ -389,7 +394,7 @@ input[type="text"]:focus {
   background-color: #C3D493;
 }
 
-.container-img:hover .overlay-img {
+.product-img:hover .overlay-img {
   opacity: 1;
 }
 
@@ -494,6 +499,8 @@ input[type="text"]:focus {
 /* Styling the product listing */
 /* Resource from https://www.w3schools.com/howto/howto_css_product_card.asp */
 .product {
+  /* display: flex;
+  flex: 1; */
   box-shadow: 1px 2px 8px #E4E3E3;
   max-width: 350px;
   text-align: center;
