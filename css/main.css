@@ -795,3 +795,38 @@ font-size: 16px;
     order: 2;
   }
 }
+
+/* Top Header Styling */
+{box-sizing: border-box;}
+.top_header {
+  overflow: hidden;
+  background-color: #F8EFAF;
+  padding: 2px 2px;
+}
+
+.top_header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px; 
+  line-height: 25px;
+  border-radius: 4px;
+  
+}
+
+.top_header a.logo {
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .top_header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
