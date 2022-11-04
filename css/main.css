@@ -780,3 +780,9 @@ font-size: 16px;
   flex: 150%;
   order: 2;
 }
+
+@media (min-width: 50.25em) {
+  .about_img{
+    order: 2;
+  }
+}
