@@ -766,6 +766,17 @@ font-size: 16px;
   top: 25rem;
 }
 
+/* About Page styling */
+.about_box{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 .about_context p{
   width: 50%;
+}
+
+.about_img {
+  flex: 150%;
+  order: 2;
 }
