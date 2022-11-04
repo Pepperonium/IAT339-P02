@@ -1,0 +1,92 @@
+/* Styling Little Bee Website */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap');
+
+/* Background color */
+html {
+  background-color: #FAF7F2;
+}
+
+/* Navigation Bar */
+/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
+.nav_bar {
+  list-style-type: none;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.nav_bar li {
+  float: left;
+}
+
+.nav_bar li a {
+  display: block;
+  padding: 14px 16px;
+  color: #99BDDF;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav_bar li a:hover:not(.active) {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  color: #5D6165;
+  background-color: #F6EEB1;
+  transition-duration: 0.5s;
+}
+
+.active {
+  color: #5D6165;
+}
+
+/* Main image */
+.main-img {
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.main_img img {
+  margin-top: 2rem;
+  margin-left: 8rem;
+}
+
+.bottom-left {
+  position: absolute;
+  left: 12rem;
+  top: 18rem;
+}
+
+.quiz-button {
+  display: inline-block;
+  padding: 0.75rem;
+  border-radius: 6px;
+  color: #FFFDFB;
+  background-color: #99BDDF;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.quiz-button:hover, .quiz-button:focus {
+  color: #5D6165;
+  border-radius: 6px;
+  background-color: #F6EEB1;
+  transition-duration: 0.5s;
+}
