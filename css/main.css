@@ -82,9 +82,11 @@ code {
   MAIN NAVIGATION BAR -------------------
 */
 /* Resource from https://www.w3schools.com/css/css3_buttons.asp */
-nav{
+nav {
+  min-width: 1rem;
   position: -webkit-sticky;
   position: sticky;
+  top: 2rem;
 }
 
 nav a:hover, nav a:focus {
