@@ -5,20 +5,45 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap');
 
-html{
+html {
   background-color: #FAF7F2;
+  color: #5D6165;
 }
 
-/* Styling the font */
-/* Resource from https://help.proprofskb.com/manage-css */
 body {
-  font-family: 'Inconsolata', sans-serif;
   padding: 2rem;
-  color: #36383A;
+}
+
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  color: #5D6165;
+}
+
+h2 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  color: #5D6165;
+}
+
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  color: #5D6165;
+}
+
+h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  color: #5D6165;
+}
+
+p {
+  font-family: 'Inconsolata', sans-serif;
+  color: #5D6165;
 }
 
 .element {
-  /* display: flex;*/
   flex: 1;
   padding-bottom: 2rem;
   border-top-width: 0.10rem;
@@ -26,79 +51,25 @@ body {
   border-top-color: #DCDCDC;
 }
 
-hr {
-  /* border-color: #DCDCDC;
-  border-top-color: #DCDCDC; */
-  margin-top: 2rem;
-  border: none;
-  height: 2px;
-  background: #095484;
-  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
-}
-
-h1{
+.h1-element {
   font-family: 'Karla', sans-serif;
   font-weight: 700;
-  color: #36383A;
+  color: #C3D493;
 }
 
-h2 {
-  font-family: 'Karla', sans-serif;
-  margin-top: 6rem;
-  padding: 0rem;
-  color: #BDC99C;
-}
-
-h3 {
-  font-family: 'Karla', sans-serif;
-  font-style: normal;
-  margin-top: 1rem;
-  color: #7F8387;
-}
-
-h4 {
-  font-family: 'Karla', sans-serif;
-  margin-bottom: 1rem;
-  color: #36383A;
-}
-
-h5 {
-  font-family: 'Inconsolata', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  margin-bottom: 0.25rem;
-  color: #36383A;
-}
-
-p {
-  font-family: 'Inconsolata', sans-serif;
-  margin-top: 0;
-  color: #36383A;
-}
-
-code {
-  font-family: 'Inconsolata', sans-serif;
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-}
-
-/*
-  MAIN NAVIGATION BAR -------------------
-*/
-/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
-nav {
+/* MAIN NAV - this is the nav styling for the style guide only */
+.main-nav nav {
   min-width: 377px;
   position: -webkit-sticky;
   position: sticky;
   top: 2rem;
 }
 
-nav a:hover, nav a:focus {
+.main-nav a:hover, .main-nav a:focus {
   text-decoration: none;
 }
 
-ul {
+.main-nav-ul ul {
   list-style-type: none;
   margin-top: 2rem;
   padding: 0;
@@ -114,7 +85,7 @@ li {
   float: left;
 }
 
-nav ul li a {
+.main-nav ul li a {
   flex-wrap: nowrap;
   display: block;
   color: #99BDDF;
@@ -131,49 +102,35 @@ li a:hover:not(.active) {
   color: #C3D493;
 }
 
-
-
-/*
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the in-text link */
-/* Resource from https://medium.com/geekculture/css-link-style-53adb595b4d */
-.text-link a {
+/* IN-TEXT LINK */
+.intext-link a {
+  font-family: 'Inconsolata', sans-serif;
   color: #99BDDF;
-}
-
-.text-link a:hover, .text-link a:focus{
+  text-decoration: none;
   padding: 0.5rem;
   border-radius: 6px;
-  color: #5D6165;
-  background-color: #F6EEB1;
+  background-color: #FAF7F2;
   transition-duration: 0.5s;
 }
 
-/* Styling for the navigation button & link */
-/* Resource from https://www.w3schools.com/css/css_navbar.asp */
-.nav_link{
-  width: 6.5%;
-  list-style-type: none;
-  margin-top: 2rem;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FAF7F2;
-  font-family: 'Karla', sans-serif;
-  font-weight: 500;
+.intext-link a:hover, .intext-link a:focus {
+  padding: 0.5rem;
   border-radius: 6px;
-  box-shadow: 1px 2px 6px #E4E3E3;
+  background-color: #F6EEB1;
+  color: #5D6165;
+  transition-duration: 0.5s;
 }
 
+/* NAVIGATION LINK (BUTTON) */
 .button-nav {
   display: inline-block;
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
   padding: 0.75rem;
   color: #FFFDFB;
   border-radius: 6px;
   background-color: #99BDDF;
   text-decoration: none;
-  transition-property: background-color;
   transition-duration: 0.5s;
 }
 
@@ -184,24 +141,21 @@ li a:hover:not(.active) {
   transition-duration: 0.5s;
 }
 
-
-/* Styling for the submit & reset */
-/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
-/* Resource from https://www.w3schools.com/css/css_form.asp */
-.submit-reset label{
+/* SUBMIT/RESET BUTTONS */
+.submit-reset label {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
+  font-size: 18px;
   margin-bottom: 1rem;
-  font-size: 16px;
-  color: #36383A;
+  color: #5D6165;
 }
 
 .submit-reset input[type="text"] {
   font-family: 'Inconsolata', sans-serif;
   font-size: 16px;
-  color: #36383A;
+  color: #5D6165;
   width: 40%;
-  padding: 10px 10px;
+  padding: 10px;
   margin: 8px 1px;
   box-sizing: border-box;
   border: 2px solid #99BDDF;
@@ -225,7 +179,7 @@ input[type="text"]:focus {
   background-color: #FBF7DD;
 }
 
-.button-sr {
+.button-submit {
   font-family: 'Inconsolata', sans-serif;
   font-size: 16px;
   display: inline-block;
@@ -239,7 +193,21 @@ input[type="text"]:focus {
   border: none;
 }
 
-.button-sr:hover, .button-nav:focus {
+.button-reset {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0.75rem;
+  color: #FFFDFB;
+  border-radius: 6px;
+  background-color: #C3D493;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border: none;
+}
+
+.button-submit:hover, .button-reset:hover {
   color: #5D6165;
   border-radius: 6px;
   background-color: #F6EEB1;
@@ -247,24 +215,38 @@ input[type="text"]:focus {
   border: none;
 }
 
-
-/* Styling for the text input field */
-/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
-/* Resource from https://www.w3schools.com/css/css_form.asp */
-.box-form label{
-  font-family: 'Karla', sans-serif;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  font-size: 16px;
-  color: #36383A;
+/* TEXT INPUT FIELD WITH LABEL */
+.input-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
-.box-form input[type="text"] {
+.input-column1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label label {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #5D6165;
+}
+
+.input-label input[type="text"] {
   font-family: 'Inconsolata', sans-serif;
   font-size: 16px;
-  color: #36383A;
+  color: #5D6165;
   width: 40%;
-  padding: 10px 10px;
+  padding: 10px;
   margin: 8px 1px;
   box-sizing: border-box;
   border: 2px solid #99BDDF;
@@ -288,9 +270,7 @@ input[type="text"]:focus {
   background-color: #FBF7DD;
 }
 
-
-/* Styling for the radio button */
-/* Resource from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+/* RADIO BUTTON WITH LABEL */
 .container {
   display: block;
   position: relative;
@@ -304,7 +284,7 @@ input[type="text"]:focus {
   user-select: none;
 }
 
-.container{
+.container {
   font-weight: bold;
   font-size: 18px;
   font-family: 'Karla', sans-serif;
@@ -327,14 +307,14 @@ input[type="text"]:focus {
   background-color: #EEE;
 }
 
-.stan-del h4{
+.stan-del h4 {
   font-weight: bold;
   color: #C3D493;
   font-family: 'Inconsolata', sans-serif;
   margin-left: 2.5rem;
 }
 
-.stan-del p{
+.stan-del p {
   margin-left: 2.5rem;
 }
 
@@ -373,8 +353,7 @@ input[type="text"]:focus {
   color: #FAF7F2;
 }
 
-/* Styling for the image as a link */
-/* Resource from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+/* IMAGE AS A LINK */
 .product-img {
   flex: 1;
   flex-wrap: wrap;
@@ -416,56 +395,20 @@ input[type="text"]:focus {
   text-align: center;
 }
 
-
-
-/*
-  TEXT ELEMENTS -------------------
-*/
-
-/* Styling for the header */
-.head h2{
-  font-family: 'Karla', sans-serif;
-  margin-top: 0rem;
-  padding-left: 0rem;
-  color: #36383A;
-  background-color: #FAF7F2;
-}
-
-.head h3{
-  font-family: 'Karla', sans-serif;
-  margin-top: 0rem;
-  padding-left: 0rem;
-  color: #36383A;
-}
-
-.head h4{
-  font-family: 'Karla', sans-serif;
-  margin-top: 0rem;
-  padding-left: 0rem;
-  color: #36383A;
-}
-
-.head h5{
-  font-family: 'Karla', sans-serif;
-  margin-top: 0rem;
-  padding-left: 0rem;
-  color: #36383A;
-}
-
-/* Styling for the paragraph */
-.para{
+/* PARAGRAPH */
+.paragraph{
   width: 50%;
 }
 
-
-/* Styling for the numbered lists */
-/* Resource from https://css-tricks.com/css-counters-custom-list-number-styling/ */
-.num-li {
+/* NUMBERED LIST */
+.num-list {
     list-style: none;
     counter-reset: num;
 }
 
-.num-li li {
+.num-list li {
+    font-family: 'Inconsolata', sans-serif;
+    color: #5D6165;
     counter-increment: num;
     font-size: 16px;
     margin-bottom: 0.5rem;
@@ -473,7 +416,7 @@ input[type="text"]:focus {
     padding: 1rem;
 }
 
-.num-li li::before {
+.num-list li::before {
     content: "0" counter(num);
     font-weight: bold;
     color: #C3D493;
@@ -483,29 +426,98 @@ input[type="text"]:focus {
     margin-bottom: 0.5rem;
 }
 
+/* HEADER */
+.top-header{
+  background-color: #F8EFAF;
+  color: #5D6165;
+  padding: 10px;
 
-
-/*
-  COMBINED ELEMENTS -------------------
-*/
-
-/* Styling the main navigation */
-/* Resource from https://www.w3schools.com/css/css_navbar.asp */
-.nav_main {
-  width: 38%;
-  list-style-type: none;
-  margin-top: 2rem;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FAF7F2;
-  font-family: 'Karla', sans-serif;
-  font-weight: 500;
-  border-radius: 6px;
-  box-shadow: 1px 2px 6px #E4E3E3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
 }
 
-/* Styling the product listing */
-/* Resource from https://www.w3schools.com/howto/howto_css_product_card.asp */
+.top-header p{
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+#header-info1{
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#header-info2{
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#img-gift{
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#img-shipping{
+  padding-top: 11px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+#img-sample{
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+/* NAVIGATION BAR */
+nav{
+  background-color: #FAF7F2;
+  padding-top: 20px;
+  border-radius: 6px;
+  box-shadow: 1px 2px 6px #E4E3E3;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.left-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+a{
+  padding-right: 20px;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #99BDDF;
+}
+
+a:hover{
+  color: #6C6B6B;
+}
+
+a:active{
+  color: #C3D493;
+}
+
+/* PRODUCT LISTING */
 .product {
   /* display: flex;
   flex: 1; */
@@ -573,77 +585,7 @@ font-size: 16px;
   align-content: space-between;
 }
 
-/* Styling the payment form */
-/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
-/* Resource from https://www.w3schools.com/css/css_form.asp */
-.pay-in label{
-  font-family: 'Karla', sans-serif;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  font-size: 16px;
-  color: #36383A;
-}
-
-.pay-in input[type="text"] {
-  font-family: 'Inconsolata', sans-serif;
-  font-size: 16px;
-  color: #36383A;
-  width: 40%;
-  padding: 10px 10px;
-  margin: 8px 1px;
-  box-sizing: border-box;
-  border: 2px solid #99BDDF;
-  border-radius: 6px;
-  transition: 0.5s;
-  outline: none;
-  background-color: #FAF7F2;
-}
-
-input[type="text"]:hover {
-  outline: none;
-  border: 2px solid #F8EFAF;
-  border-radius: 6px;
-}
-
-input[type="text"]:focus {
-  outline: none;
-  border: 2px solid #F8EFAF;
-  border-radius: 6px;
-  color: #36383A;
-  background-color: #FBF7DD;
-}
-
-.button-pr {
-  font-family: 'Inconsolata', sans-serif;
-  font-size: 16px;
-  display: inline-block;
-  padding: 0.75rem;
-  color: #FFFDFB;
-  border-radius: 6px;
-  background-color: #99BDDF;
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  border: none;
-}
-
-.button-pr:hover, .button-nav:focus {
-  color: #5D6165;
-  border-radius: 6px;
-  background-color: #F6EEB1;
-  transition-duration: 0.5s;
-  border: none;
-}
-
-.pay-in hr{
-  width: 40%;
-  margin-left: 0rem;
-  border: none;
-  height: 2px;
-  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
-}
-
-/* Styling the product listing */
+/* DETAILED PRODUCT */
 .dtpro_containter{
   display: flex;
   flex-direction: row;
@@ -696,183 +638,4 @@ font-style: normal;
 padding: 0.5rem;
 color: #36383A;
 font-size: 16px;
-}
-
-/* .product1 img{
-  margin: 1rem;
-} */
-
-/* Styling the checkout cart */
-/* Resource from https://www.w3schools.com/css/css3_buttons.asp */
-/* Resource from https://www.w3schools.com/css/css_form.asp */
-.checkout hr{
-  width: 30%;
-  margin-top: 2rem;
-  margin-left: 0rem;
-  border: none;
-  height: 2px;
-  background: #095484;
-  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
-}
-
-.checkout h3 {
-  text-align: left;
-  font-family: 'Karla', sans-serif;
-  font-style: normal;
-  margin-top: 1.5rem;
-  margin-left: 0rem;
-  color: #36383A;
-  font-size: 18px;
-}
-
-/* Styling paragraph */
-.pstyle{
-  width: 60%;
-}
-
-/* Styling the image */
-.pstyle img{
-  box-shadow: 1px 2px 8px #E4E3E3;
-  margin-bottom: 0.75rem;
-}
-
-/* Styling important text*/
-.imp_info h4{
-  color: #BDC99C;
-}
-
-/* Resource from https://jonitrythall.com/flexbox-cheatsheet */
-  .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: stretch;
-    align-content: stretch;
-  }
-
-/* Additional CSS styling for website */
-/* Main image */
-.main-img {
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.main_img img {
-  margin-top: 2rem;
-  margin-left: 8rem;
-}
-
-.bottom-left {
-  position: relative;
-  left: 12rem;
-  top: 25rem;
-}
-
-/* About Page styling */
-.about_box{
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-.about_context p{
-  width: 50%;
-}
-
-.about_img {
-  flex: 150%;
-  order: 2;
-}
-
-@media (min-width: 50.25em) {
-  .about_img{
-    order: 2;
-  }
-}
-
-/* Top Header Styling */
-{box-sizing: border-box;}
-.top_header {
-  overflow: hidden;
-  background-color: #F8EFAF;
-  padding: 2px 2px;
-}
-
-.top_header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 25px;
-  border-radius: 4px;
-
-}
-
-.top_header a.logo {
-  font-size: 14px;
-  font-weight: bold;
-
-}
-
-
-@media screen and (max-width: 500px) {
-  .top_header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-/* HEADER */
-.top-header{
-  background-color: #F8EFAF;
-  color: #5D6165;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: stretch;
-  align-content: stretch;
-}
-
-.header p{
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
-  padding-right: 15px;
-}
-
-#header-info1{
-  font-family: 'Inconsolata', sans-serif;
-  font-weight: 400;
-}
-
-#header-info2{
-  font-family: 'Inconsolata', sans-serif;
-  font-weight: 400;
-}
-
-#img-gift{
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-#img-shipping{
-  padding-top: 11px;
-  padding-right: 20px;
-  padding-left: 10px;
-}
-
-#img-sample{
-  padding-top: 8px;
-  padding-right: 20px;
-  padding-left: 10px;
 }
