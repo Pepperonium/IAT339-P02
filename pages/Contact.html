@@ -20,17 +20,35 @@
 
 
   <header>
-    <div class="top_header">
-    <a href="#default" class="logo">Welcome to Little Bee!</a>
+    <div class="top-header">
+      <img src="../images/gift.png" id="img-gift" alt="Gift Wrapping" style="width:25px;height:25px;">
+      <p>Free Gift Wrapping</p>
+      <img src="../images/shipping.png" id="img-shipping" alt="Shipping" style="width:38px;height:25px;">
+      <p>Free Shipping</p>
+      <p id="header-info1">for orders over $100</p>
+      <img src="../images/sample.png" id="img-sample" alt="Sample" style="width:20px;height:30px;">
+      <p>Free Samples</p>
+      <p id="header-info2">for every order</p>
     </div>
-    <!-- Navigation bar -->
+
     <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="Product-Listing.html">Shop</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Quiz.html">Quiz</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+      <ul class="left-nav">
+        <li><a href="../pages/Product-Listing.html">Shop</a></li>
+        <li><a href="../pages/About.html">About</a></li>
+        <li><a href="../pages/Quiz.html">Quiz</a></li>
+        <li><a href="../pages/Contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="center-nav">
+        <li><a href="../index.html">
+          <img src="../images/lb-home.png" id="lbhome" alt="Little Bee Home" style="width:150px;height:35px;">
+        </a></li>
+      </ul>
+
+      <ul class="right-nav">
+        <li><a href="Shopping-Cart.html">
+          <img src="../images/shopping-bag.png" id="img-bag" alt="Shopping Cart" style="width:20px;height:25px;">
+        </a></li>
       </ul>
     </nav>
   </header>
@@ -71,6 +89,31 @@
       <input class="button-pr" type="reset" value="Clear">
     </form>
     </div>
+
+    <!-- FOOTER -->
+    <hr>
+    <div class="footer">
+      <div class="input-column1">
+        <label for="signup">Sign up to get 15% OFF your first order</label>
+        <div class="input-row">
+          <input type="text" name="email" placeholder="Email Address">
+          <a class="button-nav" href="#">Submit</a>
+        </div>
+      </div>
+      <div class="info">
+        <h4>Info</h4>
+        <div class="intext-link">
+          <a href="#">FAQ</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="mail-address">
+        <h4>Mailing Address</h4>
+        <p>4700 Kingsway, Burnaby, BC V5H 4M1</p>
+      </div>
+    </div>
+    
   </body>
 
 </html>

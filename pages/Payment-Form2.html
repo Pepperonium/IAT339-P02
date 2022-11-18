@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Little Bee Payment Form</title>
+
+        <!-- Connect .css style guide file to html -->
+        <link href="../css/main.css" rel="stylesheet">
+
+      </head>
+
+        <title>Little Bee</title>
+
+        <!-- Connect .css style guide file to html -->
+        <link href="Little Bee css/LBstyle.css" rel="stylesheet">
+
+    </head>
+
+
+    <header>
+      <div class="top-header">
+        <img src="../images/gift.png" id="img-gift" alt="Gift Wrapping" style="width:25px;height:25px;">
+        <p>Free Gift Wrapping</p>
+        <img src="../images/shipping.png" id="img-shipping" alt="Shipping" style="width:38px;height:25px;">
+        <p>Free Shipping</p>
+        <p id="header-info1">for orders over $100</p>
+        <img src="../images/sample.png" id="img-sample" alt="Sample" style="width:20px;height:30px;">
+        <p>Free Samples</p>
+        <p id="header-info2">for every order</p>
+      </div>
+
+      <nav>
+        <ul class="left-nav">
+          <li><a href="../pages/Product-Listing.html">Shop</a></li>
+          <li><a href="../pages/About.html">About</a></li>
+          <li><a href="../pages/Quiz.html">Quiz</a></li>
+          <li><a href="../pages/Contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="center-nav">
+          <li><a href="../index.html">
+            <img src="../images/lb-home.png" id="lbhome" alt="Little Bee Home" style="width:150px;height:35px;">
+          </a></li>
+        </ul>
+
+        <ul class="right-nav">
+          <li><a href="Shopping-Cart.html">
+            <img src="../images/shopping-bag.png" id="img-bag" alt="Shopping Cart" style="width:20px;height:25px;">
+          </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <body>
+      <section class="element">
+        <h3>Payment Form</h3>
+        <div class="pay-in">
+        <form action="/action_page.php">
+          <label for="pfname">First Name:</label><br>
+          <input type="text" id="pfname" name="pfname" placeholder="e.g. John"><br><br>
+          <label for="lname">Last Name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="e.g. Doe"><br><br>
+          <label for="pemail">Email:</label><br>
+          <input type="text" id="pemail" name="pemail" placeholder="e.g. jdoe@gmail.com"><br><br>
+          <label for="address">Address:</label><br>
+          <input type="text" id="address" name="address" placeholder="Street Address"><br><br>
+          <hr><br>
+          <label for="cnum">Card Number:</label><br>
+          <input type="text" id="cnum" name="cnum" placeholder="**** **** **** ****"><br><br>
+          <label for="cvv">CVV:</label><br>
+          <input type="text" id="cvv" name="cvv" placeholder="***"><br><br>
+          <label for="cdex">Card Expiration:</label><br>
+          <input type="text" id="cdex" name="cdex" placeholder="MM/YY"><br><br><br>
+          <input class="button-pr" type="submit" value="Next">
+          <input class="button-pr" type="reset" value="Clear form">
+        </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <hr>
+      <div class="footer">
+        <div class="input-column1">
+          <label for="signup">Sign up to get 15% OFF your first order</label>
+          <div class="input-row">
+            <input type="text" name="email" placeholder="Email Address">
+            <a class="button-nav" href="#">Submit</a>
+          </div>
+        </div>
+        <div class="info">
+          <h4>Info</h4>
+          <div class="intext-link">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+        <div class="mail-address">
+          <h4>Mailing Address</h4>
+          <p>4700 Kingsway, Burnaby, BC V5H 4M1</p>
+        </div>
+      </div>
+      
+    </body>
+
+</html>
