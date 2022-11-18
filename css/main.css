@@ -626,6 +626,17 @@ input[type="text"]:focus {
   /* padding: 5 1rem; */
 }
 
+.dp-subtext{
+  display: flex;
+  justify-content: row;
+  align-content: space-between;
+}
+
+.dp-subtext p{
+  padding-right: 15rem;
+  padding-top: 0.2rem;
+}
+
 @media (min-width: 50.25em) {
 	.box-item-image {
 		-webkit-order: 2;
@@ -833,7 +844,7 @@ hr{
 .bottom-right{
   position:absolute;
   right: 23rem;
-  top: 98rem;
+  top: 100rem;
   display: flex;
   flex-shrink: 1;
 }
