@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING
-  Default styling for the style guide
+STYLE GUIDE STYLING
+Default styling for the style guide
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap');
@@ -111,6 +111,9 @@ li a:hover:not(.active) {
   border-radius: 6px;
   background-color: #FAF7F2;
   transition-duration: 0.5s;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .intext-link a:hover, .intext-link a:focus {
@@ -402,28 +405,28 @@ input[type="text"]:focus {
 
 /* NUMBERED LIST */
 .num-list {
-    list-style: none;
-    counter-reset: num;
+  list-style: none;
+  counter-reset: num;
 }
 
 .num-list li {
-    font-family: 'Inconsolata', sans-serif;
-    color: #5D6165;
-    counter-increment: num;
-    font-size: 16px;
-    margin-bottom: 0.5rem;
-    margin-left: 0rem;
-    padding: 1rem;
+  font-family: 'Inconsolata', sans-serif;
+  color: #5D6165;
+  counter-increment: num;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  margin-left: 0rem;
+  padding: 1rem;
 }
 
 .num-list li::before {
-    content: "0" counter(num);
-    font-weight: bold;
-    color: #C3D493;
-    font-size: 22px;
-    margin-right: 1rem;
-    margin-left: 0rem;
-    margin-bottom: 0.5rem;
+  content: "0" counter(num);
+  font-weight: bold;
+  color: #C3D493;
+  font-size: 22px;
+  margin-right: 1rem;
+  margin-left: 0rem;
+  margin-bottom: 0.5rem;
 }
 
 /* HEADER */
@@ -556,12 +559,12 @@ a:active{
 }
 
 .product p{
-font-family: 'Inconsolata', sans-serif;
-text-align: left;
-font-style: normal;
-padding: 1rem;
-color: #36383A;
-font-size: 16px;
+  font-family: 'Inconsolata', sans-serif;
+  text-align: left;
+  font-style: normal;
+  padding: 1rem;
+  color: #36383A;
+  font-size: 16px;
 }
 
 .product img{
@@ -630,12 +633,12 @@ font-size: 16px;
 }
 
 .info_list p{
-font-family: 'Inconsolata', sans-serif;
-text-align: left;
-font-style: normal;
-padding: 0.5rem;
-color: #36383A;
-font-size: 16px;
+  font-family: 'Inconsolata', sans-serif;
+  text-align: left;
+  font-style: normal;
+  padding: 0.5rem;
+  color: #36383A;
+  font-size: 16px;
 }
 
 /* HOME PAGE */
@@ -677,4 +680,58 @@ hr{
   height: 2px;
   background: #095484;
   background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.footer label {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #5D6165;
+}
+
+.footer input[type="text"] {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  color: #5D6165;
+  width: 40%;
+  padding: 10px;
+  margin: 8px 1px;
+  box-sizing: border-box;
+  border: 2px solid #99BDDF;
+  border-radius: 6px;
+  transition: 0.5s;
+  outline: none;
+  background-color: #FAF7F2;
+}
+
+.footer input[type="text"]:hover {
+  outline: none;
+  border: 2px solid #F8EFAF;
+  border-radius: 6px;
+}
+
+.footer input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #F8EFAF;
+  border-radius: 6px;
+  color: #36383A;
+  background-color: #FBF7DD;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,140 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Little Bee Style Guide</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Bee Style Guide</title>
 
-    <!-- Connect .css style guide file to html -->
-    <link href="css/main.css" rel="stylesheet">
-  </head>
+  <!-- Connect .css style guide file to html -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
 
-  <body>
-    <header>
-      <!-- TITLE -->
-      <h4>P02 Assignment - Group 14 (Chloe Velasquez & Ryan Tsang)</h4>
-      <h1>Little Bee Style Guide</h1>
-      <p>A style guide for Little Bee - a baby skincare company.</p>
+<body>
+  <header>
+    <!-- TITLE -->
+    <h4>P02 Assignment - Group 14 (Chloe Velasquez & Ryan Tsang)</h4>
+    <h1>Little Bee Style Guide</h1>
+    <p>A style guide for Little Bee - a baby skincare company.</p>
 
-      <!-- MAIN NAV BAR -->
-      <nav class="main-nav">
-        <ul class="main-nav-ul">
-          <li><a href="#interactive_elements">Interactive Elements</a></li>
-          <li><a href="#text_elements">Text Elements</a></li>
-          <li><a href="#combined_elements">Combined Elements</a></li>
-          <li><a href="#combined_elements">Product Listing Template</a></li>
-          <li><a href="#combined_elements">Checkout Template</a></li>
-          <li><a href="#brand_identity">Brand Identity</a></li>
-          <li><a href="#about_us">About Us</a></li>
-          <li><a href="#contact_us">Contact Us</a></li>
-          <li><a href="#citations">Citations</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- MAIN NAV BAR -->
+    <nav class="main-nav">
+      <ul class="main-nav-ul">
+        <li><a href="#interactive_elements">Interactive Elements</a></li>
+        <li><a href="#text_elements">Text Elements</a></li>
+        <li><a href="#combined_elements">Combined Elements</a></li>
+        <li><a href="#combined_elements">Product Listing Template</a></li>
+        <li><a href="#combined_elements">Checkout Template</a></li>
+        <li><a href="#brand_identity">Brand Identity</a></li>
+        <li><a href="#about_us">About Us</a></li>
+        <li><a href="#contact_us">Contact Us</a></li>
+        <li><a href="#citations">Citations</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- INTERACTIVE ELEMENTS -->
-    <section id="interactive_elements">
-      <h1 class="h1-element">Interactive Elements</h1>
+  <!-- INTERACTIVE ELEMENTS -->
+  <section id="interactive_elements">
+    <h1 class="h1-element">Interactive Elements</h1>
 
-      <!-- IN-TEXT LINK -->
-      <section class="element">
-        <h2>In-text link</h2>
-        <div class="intext-link">
-          <a href="https://www.instagram.com">@littlebee.co</a>
-        </div>
-      </section>
+    <!-- IN-TEXT LINK -->
+    <section class="element">
+      <h2>In-text link</h2>
+      <div class="intext-link">
+        <a href="https://www.instagram.com">@littlebee.co</a>
+      </div>
+    </section>
 
-      <!-- NAVIGATION LINK (BUTTON) -->
-      <section class="element">
-        <h2>Navigation Link (Button)</h2>
-        <h3>CSS selector:</h3>
-        <p>.button-nav</p>
-        <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-        <h3>Rendered element:</h3>
-        <a class="button-nav" href="#">Default Button</a>
-      </section>
+    <!-- NAVIGATION LINK (BUTTON) -->
+    <section class="element">
+      <h2>Navigation Link (Button)</h2>
+      <h3>CSS selector:</h3>
+      <p>.button-nav</p>
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+      <h3>Rendered element:</h3>
+      <a class="button-nav" href="#">Default Button</a>
+    </section>
 
-      <!-- SUBMIT/RESET BUTTONS -->
-      <section class="element">
-        <h2>Submit/Reset Buttons</h2>
-        <div class="submit-reset">
-          <form action="/action_page.php">
+    <!-- SUBMIT/RESET BUTTONS -->
+    <section class="element">
+      <h2>Submit/Reset Buttons</h2>
+      <div class="submit-reset">
+        <form action="/action_page.php">
           <label for="review">Review:</label><br>
           <input type="text" name="review" placeholder="Comments"><br><br>
           <input class= "button-submit" type="submit" value="Submit">
           <input class= "button-reset" type="reset" value="Clear">
         </form>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- TEXT INPUT FIELD WITH LABEL -->
-      <section class="element">
-        <h2>Text Input Field with Label</h2>
-        <div class="input-label">
-          <div class="input-column1">
+    <!-- TEXT INPUT FIELD WITH LABEL -->
+    <section class="element">
+      <h2>Text Input Field with Label</h2>
+      <div class="input-label">
+        <div class="input-column1">
           <label for="fname">First name:</label>
           <input type="text" name="fname" placeholder="John">
-          </div>
-          <div class="input-column2">
+        </div>
+        <div class="input-column2">
           <label for="lname">Last name:</label>
           <input type="text" name="lname" placeholder="Doe">
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- RADIO BUTTON WITH LABEL -->
-      <section class="element">
-        <h2>Radio Button with Label</h2>
-        <label class="container">Standard Delivery
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span>
-        </label>
-        <div class="stan-del">
-          <h4> Free shipping for orders over CAD $100!</h4>
-          <p> CAD $8.00 (Orders placed now are expected to arrive in two weeks)</p><br>
-        </div>
-        <label class="container">Express Delivery
-          <input type="checkbox">
-          <span class="checkmark"></span>
-        </label>
-        <p class="stan-deltwo"> CAD $14.00 (Orders placed now are expected to arrive before a week)</p>
-      </section>
+    <!-- RADIO BUTTON WITH LABEL -->
+    <section class="element">
+      <h2>Radio Button with Label</h2>
+      <label class="container">Standard Delivery
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <div class="stan-del">
+        <h4> Free shipping for orders over CAD $100!</h4>
+        <p> CAD $8.00 (Orders placed now are expected to arrive in two weeks)</p><br>
+      </div>
+      <label class="container">Express Delivery
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <p class="stan-deltwo"> CAD $14.00 (Orders placed now are expected to arrive before a week)</p>
+    </section>
 
-      <!-- IMAGE AS A LINK -->
-      <section class="element">
-        <h2>Image as a Link</h2>
-        <div class="product-img">
-          <a href="https://www.amazon.ca">
+    <!-- IMAGE AS A LINK -->
+    <section class="element">
+      <h2>Image as a Link</h2>
+      <div class="product-img">
+        <a href="https://www.amazon.ca">
           <img src="images/shampoo.png" alt="Product" class="image-link">
           <div class="overlay-img">
             <div class="text-img">Baby Coconut Moisturizing Shampoo</div>
           </div>
-          </a>
-        </div>
-      </section>
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <!-- TEXT ELEMENTS -->
+  <section id="text_elements">
+    <h1 class="h1-element">Text Elements</h1>
+
+    <!-- HEADINGS -->
+    <section class="element">
+      <h2>Headings</h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
     </section>
 
-    <!-- TEXT ELEMENTS -->
-    <section id="text_elements">
-      <h1 class="h1-element">Text Elements</h1>
-
-      <!-- HEADINGS -->
-      <section class="element">
-        <h2>Headings</h2>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-      </section>
-
-      <!-- PARAGRAPH -->
-      <section class="element">
-        <h2>Paragraph</h2>
-        <div class="paragraph">
+    <!-- PARAGRAPH -->
+    <section class="element">
+      <h2>Paragraph</h2>
+      <div class="paragraph">
         <p>Little Bee is a company that provides customized and personalized hair care and skin care products for children.
-        The Little Bee company is targeted to babies and children themselves as the products are designed for them. This is also targeted to parents who would like to buy gentle hair care and skin care that is suitable for kids and people who are interested in buying gifts for friends and family. </p>
+          The Little Bee company is targeted to babies and children themselves as the products are designed for them. This is also targeted to parents who would like to buy gentle hair care and skin care that is suitable for kids and people who are interested in buying gifts for friends and family. </p>
         </div>
       </section>
 
@@ -159,14 +159,14 @@
       <section class="element">
         <h2>Header</h2>
         <div class="top-header">
-            <img src="images/gift.png" id="img-gift" alt="Gift Wrapping" style="width:25px;height:25px;">
-            <p>Free Gift Wrapping</p>
-            <img src="images/shipping.png" id="img-shipping" alt="Shipping" style="width:38px;height:25px;">
-            <p>Free Shipping</p>
-            <p id="header-info1">for orders over $100</p>
-            <img src="images/sample.png" id="img-sample" alt="Sample" style="width:20px;height:30px;">
-            <p>Free Samples</p>
-            <p id="header-info2">for every order</p>
+          <img src="images/gift.png" id="img-gift" alt="Gift Wrapping" style="width:25px;height:25px;">
+          <p>Free Gift Wrapping</p>
+          <img src="images/shipping.png" id="img-shipping" alt="Shipping" style="width:38px;height:25px;">
+          <p>Free Shipping</p>
+          <p id="header-info1">for orders over $100</p>
+          <img src="images/sample.png" id="img-sample" alt="Sample" style="width:20px;height:30px;">
+          <p>Free Samples</p>
+          <p id="header-info2">for every order</p>
         </div>
       </section>
 
@@ -183,13 +183,13 @@
 
           <ul class="center-nav">
             <li><a href="index.html">
-            <img src="images/lb-home.png" id="lbhome" alt="Little Bee Home" style="width:150px;height:35px;">
+              <img src="images/lb-home.png" id="lbhome" alt="Little Bee Home" style="width:150px;height:35px;">
             </a></li>
           </ul>
 
           <ul class="right-nav">
             <li><a href="Shopping-Cart.html">
-            <img src="images/shopping-bag.png" id="img-bag" alt="Shopping Cart" style="width:20px;height:25px;">
+              <img src="images/shopping-bag.png" id="img-bag" alt="Shopping Cart" style="width:20px;height:25px;">
             </a></li>
           </ul>
         </nav>
@@ -202,79 +202,78 @@
 
           <!-- Visual reference for Image as a link
           <div class="product-img">
-            <a href="https://www.amazon.ca">
-            <img src="images/shampoo.png" alt="Product" class="image-link">
-            <div class="overlay-img">
-              <div class="text-img">Baby Coconut Moisturizing Shampoo</div>
-            </div>
-            <hr>
-            <h3>Baby Coconut Moisturizing Shampoo</h3>
-            <div class="price">
-              <p>$35.00</p>
-            </div>
-            <p>Little Bee’s Baby Coconut Shampoo is a gentle shampoo that provides moisture, shine and smoothness on your little’s hair. It reduces breakage and frizz. This is perfect for any type of hair!</p>
-            </a>
-          </div> -->
-
-          <div class="product">
-            <a href="pages/Detailed-Product-View.html"
-            <img src="images/shampoo.png" alt="Product" class="image-link">
-            <div class="overlay-img">
-              <div class="text-img"> Baby Coconut Moisturizing Shampoo</div>
-            </div>
-            <hr>
-            <h3>Baby Coconut Moisturizing Shampoo</h3>
-            <div class="price">
-              <p>$35.00</p>
-            </div>
-            <p>Little Bee’s Baby Coconut Shampoo is a gentle shampoo that provides moisture, shine and smoothness on your little’s hair. It reduces breakage and frizz. This is perfect for any type of hair!</p>
-          </div>
-
-          <div class="product">
-            <img src="images/shampoo.png" alt="Product" style="width:78%;height:40%;">
-            <hr>
-            <h3>Baby Coconut Moisturizing Shampoo</h3>
-            <div class="price">
-            <p>$20.00</p>
-            </div>
-            <p>Little Bee’s Baby Multi-purpose Oil is a green tea scented oil that can be used for anything. It provides moisture which is perfect for baby massages, relaxation and more.</p>
-          </div>
-
-          <div class="product">
-            <img src="images/oil2.png" alt="Product1" style="width:78%;height:40%;">
-            <hr>
-            <h3>Baby Multi-purpose Green Tea Oil</h3>
-            <div class="price">
-            <p>$20.00</p>
-            </div>
-            <p>Little Bee’s Baby Multi-purpose Oil is a green tea scented oil that can be used for anything. It provides moisture which is perfect for baby massages, relaxation and more.</p>
-          </div>
+          <a href="https://www.amazon.ca">
+          <img src="images/shampoo.png" alt="Product" class="image-link">
+          <div class="overlay-img">
+          <div class="text-img">Baby Coconut Moisturizing Shampoo</div>
         </div>
-      </section>
-
-      <!-- Detailed Product View -->
-      <section class="element">
-        <h2>Detailed Product View</h2>
-        <div class="dtpro_containter">
-        <div class="product1">
-          <img src="images/shampoo.png" alt="Product" style="width:80%;height:70%;">
-        </div>
-        <div class="info_list">
-          <h3>Baby Multi-purpose Green Tea Oil</h3>
-          <hr>
+        <hr>
+        <h3>Baby Coconut Moisturizing Shampoo</h3>
         <div class="price">
-          <p>$20.00</p>
-        </div>
-          <p>Little Bee’s Baby Multi-purpose Oil is a green tea scented oil that can be used for anything. It provides moisture which is perfect for baby massages, relaxation and more.</p>
-          <h3>More Information  +</h3>
-          <hr> <br><br>
-          <div class="pay-in">
-              <input class="button-pr" type="submit" value="Add to Cart">
-          </div>
-        </div>
-        </div>
-        </div>
-      </section>
-    </section>
-  </body>
+        <p>$35.00</p>
+      </div>
+      <p>Little Bee’s Baby Coconut Shampoo is a gentle shampoo that provides moisture, shine and smoothness on your little’s hair. It reduces breakage and frizz. This is perfect for any type of hair!</p>
+    </a>
+  </div> -->
+
+  <div class="product">
+    <a href="pages/Detailed-Product-View.html"
+    <img src="images/shampoo.png" alt="Product" class="image-link">
+    <div class="overlay-img">
+      <div class="text-img"> Baby Coconut Moisturizing Shampoo</div>
+    </div>
+    <hr>
+    <h3>Baby Coconut Moisturizing Shampoo</h3>
+    <div class="price">
+      <p>$35.00</p>
+    </div>
+    <p>Little Bee’s Baby Coconut Shampoo is a gentle shampoo that provides moisture, shine and smoothness on your little’s hair. It reduces breakage and frizz. This is perfect for any type of hair!</p>
+  </div>
+
+  <div class="product">
+    <img src="images/shampoo.png" alt="Product" style="width:78%;height:40%;">
+    <hr>
+    <h3>Baby Coconut Moisturizing Shampoo</h3>
+    <div class="price">
+      <p>$20.00</p>
+    </div>
+    <p>Little Bee’s Baby Multi-purpose Oil is a green tea scented oil that can be used for anything. It provides moisture which is perfect for baby massages, relaxation and more.</p>
+  </div>
+
+  <div class="product">
+    <img src="images/oil2.png" alt="Product1" style="width:78%;height:40%;">
+    <hr>
+    <h3>Baby Multi-purpose Green Tea Oil</h3>
+    <div class="price">
+      <p>$20.00</p>
+    </div>
+    <p>Little Bee’s Baby Multi-purpose Oil is a green tea scented oil that can be used for anything. It provides moisture which is perfect for baby massages, relaxation and more.</p>
+  </div>
+</div>
+</section>
+
+<!-- Detailed Product View -->
+<section class="element">
+  <h2>Detailed Product View</h2>
+  <div class="dtpro_containter">
+    <div class="product1">
+      <img src="images/shampoo.png" alt="Product" style="width:80%;height:70%;">
+    </div>
+    <div class="info_list">
+      <h3>Baby Multi-purpose Green Tea Oil</h3>
+      <hr>
+      <div class="price">
+        <p>$20.00</p>
+      </div>
+      <p>Little Bee’s Baby Multi-purpose Oil is a green tea scented oil that can be used for anything. It provides moisture which is perfect for baby massages, relaxation and more.</p>
+      <h3>More Information  +</h3>
+      <hr> <br><br>
+      <div class="pay-in">
+        <input class="button-pr" type="submit" value="Add to Cart">
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+</body>
 </html>
