@@ -56,27 +56,41 @@
     </header>
 
     <body>
-      <section class="element">
-        <h3>Payment Form</h3>
+      <p>Information & Shipping</p>
+      <img src="../images/arrow.png" alt="arrow" style="width:10px;height:10px;">
+      <p>Payment</p>
+
+        <h3>Summary</h3>
+        <h4>Contact & Shipping Address</h4>
+        <p>John Doe, jdoe@gmail.com, +1(778)123-4567, 1021 Robson St #100, Vancouver, BC V6E 4A9</p>
+        <h4>Shipping Method</h4>
+        <p>Standard Delivery</p>
+        <hr>
+        <h4>Subtotal</h4>
+        <p>$25.00 CAD</p>
+        <h4>Taxes</h4>
+        <p>$2.00 CAD</p>
+        <h4>Shipping</h4>
+        <p>$8.00 CAD</p>
+        <h3>Total</h3>
+        <h3>$35.00 CAD</h3>
+
+        <h3>Payment Information</h3>
+        <p>All transactions are secure and encrypted</p>
         <div class="pay-in">
         <form action="/action_page.php">
           <label for="pfname">First Name:</label><br>
           <input type="text" id="pfname" name="pfname" placeholder="e.g. John"><br><br>
           <label for="lname">Last Name:</label><br>
           <input type="text" id="lname" name="lname" placeholder="e.g. Doe"><br><br>
-          <label for="pemail">Email:</label><br>
-          <input type="text" id="pemail" name="pemail" placeholder="e.g. jdoe@gmail.com"><br><br>
-          <label for="address">Address:</label><br>
-          <input type="text" id="address" name="address" placeholder="Street Address"><br><br>
-          <hr><br>
           <label for="cnum">Card Number:</label><br>
           <input type="text" id="cnum" name="cnum" placeholder="**** **** **** ****"><br><br>
           <label for="cvv">CVV:</label><br>
           <input type="text" id="cvv" name="cvv" placeholder="***"><br><br>
           <label for="cdex">Card Expiration:</label><br>
           <input type="text" id="cdex" name="cdex" placeholder="MM/YY"><br><br><br>
-          <input class="button-pr" type="submit" value="Next">
-          <input class="button-pr" type="reset" value="Clear form">
+          <input class="button-submit" type="submit" value="Next">
+          <input class="button-reset" type="reset" value="Clear form">
         </form>
         </div>
       </section>
@@ -104,7 +118,7 @@
           <p>4700 Kingsway, Burnaby, BC V5H 4M1</p>
         </div>
       </div>
-      
+
     </body>
 
 </html>
