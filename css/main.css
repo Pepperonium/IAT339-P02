@@ -767,7 +767,7 @@ hr{
 .about-img{
   -webkit-flex: 3 1 400px;
   -ms-flex: 3 1 400px;
-  flex: 3 1 40px;
+  flex: 3 1 400px;
 }
 
 .about-text{
