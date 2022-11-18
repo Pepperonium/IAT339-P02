@@ -112,6 +112,7 @@ nav{
   flex-shrink: 0;
   justify-content: space-between;
   align-items: center;
+  flex-basis: auto;
 }
 
 .left-nav{
@@ -125,6 +126,10 @@ nav{
   justify-content: flex-start;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.nav-element{
+  margin-right: auto;
 }
 
 .nav-logo-element li{
@@ -477,6 +482,12 @@ input[type="text"]:focus {
 }
 
 /* HEADER */
+header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
 .top-header{
   background-color: #F8EFAF;
   color: #5D6165;
