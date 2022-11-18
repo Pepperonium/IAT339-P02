@@ -484,7 +484,7 @@ input[type="text"]:focus {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   flex-shrink: ;
   align-items: stretch;
   align-content: stretch;
