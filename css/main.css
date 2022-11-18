@@ -750,6 +750,7 @@ hr{
 
 /* ABOUT PAGE */
 .about{
+  padding-top: 2rem
   display: -webkit-flex; /* For support in a series of Webkit browsers */
 	display: -ms-flex;
   display: flex;
@@ -766,15 +767,16 @@ hr{
 .about-img{
   -webkit-flex: 3 1 400px;
   -ms-flex: 3 1 400px;
-  flex: 3 1 400px;
+  flex: 3 1 40px;
 }
 
 .about-text{
   -webkit-flex: 1 1 18em;
   -ms-flex: 1 1 18em;
-  flex: 1 1 18em;
+  flex: 1 1 20em;
 
-  padding: 0 1rem;
+  padding
+  /* padding: 0 1rem; */
 }
 
 @media (min-width: 50.25em) {
