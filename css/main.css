@@ -597,7 +597,13 @@ input[type="text"]:focus {
 }
 
 /* DETAILED PRODUCT */
-.dtpro_containter{
+.dp_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* .dtpro_containter{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -607,7 +613,6 @@ input[type="text"]:focus {
 }
 
 .info_list {
-  /* box-shadow: 1px 2px 8px #E4E3E3; */
   max-width: 350px;
   text-align: center;
   background-color: #FAF7F2;
@@ -748,7 +753,7 @@ hr{
 .info {
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* ABOUT PAGE */
 .about{
