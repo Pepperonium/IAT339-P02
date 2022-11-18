@@ -735,3 +735,14 @@ hr{
   display: flex;
   flex-direction: column;
 }
+
+/* ABOUT PAGE */
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: justify-start;
+}
+
+.about-img{
+  padding-left: 300px;
+}
