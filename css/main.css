@@ -641,6 +641,7 @@ font-size: 16px;
 /* HOME PAGE */
 /* Main image */
 .main-img {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -660,4 +661,20 @@ font-size: 16px;
   position: absolute;
   left: 14rem;
   top: 35rem;
+}
+
+/* Our Mission */
+.mission{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+}
+
+/* Footer */
+hr{
+  border: none;
+  height: 2px;
+  background: #095484;
+  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
 }
