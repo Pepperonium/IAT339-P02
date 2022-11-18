@@ -82,7 +82,7 @@ p {
 }
 
 li {
-  float: left;
+  float:left;
 }
 
 .main-nav ul li a {
@@ -99,6 +99,53 @@ li a:hover:not(.active) {
 }
 
 .active {
+  color: #C3D493;
+}
+
+/* NAVIGATION BAR */
+nav{
+  background-color: #FAF7F2;
+  padding-top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.nav-element li{
+  display: inline-block;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-logo-element li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a{
+  padding-right: 20px;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #99BDDF;
+}
+
+a:hover{
+  color: #6C6B6B;
+}
+
+a:active{
   color: #C3D493;
 }
 
@@ -434,11 +481,11 @@ input[type="text"]:focus {
   background-color: #F8EFAF;
   color: #5D6165;
   padding: 10px;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-shrink: ;
   align-items: stretch;
   align-content: stretch;
 }
@@ -480,46 +527,8 @@ input[type="text"]:focus {
   padding-left: 10px;
 }
 
-/* NAVIGATION BAR */
-nav{
-  background-color: #FAF7F2;
-  padding-top: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-ul{
-  list-style-type: none;
-}
-
-.left-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-a{
-  padding-right: 20px;
-  text-decoration: none;
-  font-family: 'Karla', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #99BDDF;
-}
-
-a:hover{
-  color: #6C6B6B;
-}
-
-a:active{
-  color: #C3D493;
-}
-
 /* PRODUCT LISTING */
+
 .product {
   /* display: flex;
   flex: 1; */
@@ -580,10 +589,10 @@ a:active{
 .prod_container{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items:center;
+  align-content: center;
   align-content: space-between;
 }
 
@@ -662,9 +671,9 @@ a:active{
 }
 
 .bottom-left {
-  position: absolute;
-  left: 14rem;
-  top: 35rem;
+  position:absolute;
+  /* left: 14rem;
+  top: 35rem; */
 }
 
 /* Our Mission */
@@ -735,18 +744,4 @@ hr{
 .info {
   display: flex;
   flex-direction: column;
-}
-
-/* ABOUT PAGE */
-.about{
-  display: flex;
-  flex-direction: row;
-  justify-content: justify-start;
-
-  align-items: stretch;
-  align-content: stretch;
-}
-
-.about-img{
-  padding-left: 300px;
 }
