@@ -57,26 +57,61 @@
 
     <body>
 
-        <h3>Payment Form</h3>
+      <p>Information & Shipping</p>
+      <img src="../images/arrow.png" alt="arrow" style="width:10px;height:10px;">
+      <p>Payment</p>
+        <h3>Contact & Shipping Information</h3>
+        <p>Enter your contact information and shipping address</p>
         <div class="pay-in">
         <form action="/action_page.php">
-          <label for="pfname">First Name:</label><br>
+          <label for="pfname">First Name</label><br>
           <input type="text" id="pfname" name="pfname" placeholder="e.g. John"><br><br>
-          <label for="lname">Last Name:</label><br>
+          <label for="lname">Last Name</label><br>
           <input type="text" id="lname" name="lname" placeholder="e.g. Doe"><br><br>
-          <label for="pemail">Email:</label><br>
+          <label for="pemail">Email</label><br>
           <input type="text" id="pemail" name="pemail" placeholder="e.g. jdoe@gmail.com"><br><br>
-          <label for="address">Address:</label><br>
+          <label for="phone">Phone Number</label><br>
+          <input type="text" id="phone" name="phone" placeholder="+1 000-0000"><br><br>
+          <label for="country">Country/Region</label><br>
+          <input type="text" id="country" name="country"><br><br>
+          <label for="city">City</label><br>
+          <input type="text" id="city" name="city"><br><br>
+          <label for="pcode">Postal Code</label><br>
+          <input type="text" id="pcode" name="pcode"><br><br>
+          <label for="address">Address</label><br>
           <input type="text" id="address" name="address" placeholder="Street Address"><br><br>
-          <hr><br>
-          <label for="cnum">Card Number:</label><br>
-          <input type="text" id="cnum" name="cnum" placeholder="**** **** **** ****"><br><br>
-          <label for="cvv">CVV:</label><br>
-          <input type="text" id="cvv" name="cvv" placeholder="***"><br><br>
-          <label for="cdex">Card Expiration:</label><br>
-          <input type="text" id="cdex" name="cdex" placeholder="MM/YY"><br><br><br>
-          <input class="button-pr" type="submit" value="Next">
-          <input class="button-pr" type="reset" value="Clear form">
+          <label class="container">Save this information for next time
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <hr>
+          <h3>Shipping Method</h3>
+          <p>Select your preferred method of shipping</p>
+          <label class="container">Standard Delivery
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <div class="stan-del">
+            <h4> Free shipping for orders over CAD $100!</h4>
+            <p> CAD $8.00 (Orders placed now are expected to arrive in two weeks)</p><br>
+          </div>
+          <label class="container">Express Delivery
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p class="stan-deltwo"> CAD $14.00 (Orders placed now are expected to arrive before a week)</p>
+
+          <hr>
+          <h3>Make someone’s day!</h3>
+          <label class="container">Do you want to gift wrap your order?
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label for="message">Message</label><br>
+          <input type="text" name="message"><br><br>
+
+          <input class="button-submit" type="submit" value="Next">
+          <input class="button-reset" type="reset" value="Clear form">
         </form>
         </div>
 
