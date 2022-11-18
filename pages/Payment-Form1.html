@@ -56,13 +56,15 @@
     </header>
 
     <body>
-
+      <div class="payment-info">
       <p>Information & Shipping</p>
-      <img src="../images/arrow.png" alt="arrow" style="width:10px;height:10px;">
+      <img src="../images/arrow.png" id="arrow" alt="arrow" style="width:20px;height:20px;">
       <p>Payment</p>
+      </div>
+
         <h3>Contact & Shipping Information</h3>
         <p>Enter your contact information and shipping address</p>
-        <div class="pay-in">
+        <div class="input-label">
         <form action="../pages/Payment-Form2.html">
           <label for="pfname">First Name</label><br>
           <input type="text" id="pfname" name="pfname" placeholder="e.g. John"><br><br>
@@ -79,7 +81,8 @@
           <label for="pcode">Postal Code</label><br>
           <input type="text" id="pcode" name="pcode"><br><br>
           <label for="address">Address</label><br>
-          <input type="text" id="address" name="address" placeholder="Street Address"><br><br>
+          <input type="text" id="address" name="address" placeholder="Street Address">
+        </div>
           <label class="container">Save this information for next time
             <input type="checkbox" checked="checked">
             <span class="checkmark"></span>
@@ -107,9 +110,10 @@
             <input type="checkbox" checked="checked">
             <span class="checkmark"></span>
           </label>
-          <label for="message">Message</label><br>
-          <input type="text" name="message"><br><br>
-
+          <div class="input-label">
+            <label for="message">Message</label>
+            <input type="text" name="message">
+        </div>
           <input class="button-submit" type="submit" value="Next">
           <input class="button-reset" type="reset" value="Clear form">
         </form>
