@@ -2,109 +2,129 @@
 <html lang="en">
 
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Little Bee Style Guide</title>
+    <title>P01 - Little Bee Style Guide </title>
 
     <!-- Connect .css style guide file to html -->
-    <link href="LBmain.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
   </head>
 
   <body>
+
     <header>
-      <!-- TITLE -->
-      <h4>P02 Assignment - Group 14 (Chloe Velasquez & Ryan Tsang)</h4>
+      <h5>P02 Assignment - Group 14 (Chloe Velasquez & Ryan Tsang)</h5>
       <h1>Little Bee Style Guide</h1>
+
       <p>A style guide for Little Bee - a baby skincare company.</p>
 
-      <!-- MAIN NAV BAR -->
-      <nav class="main-nav">
-        <ul class="main-nav-ul">
-          <li><a href="#interactive_elements">Interactive Elements</a></li>
-          <li><a href="#text_elements">Text Elements</a></li>
-          <li><a href="#combined_elements">Combined Elements</a></li>
-          <li><a href="#combined_elements">Product Listing Template</a></li>
-          <li><a href="#combined_elements">Checkout Template</a></li>
-          <li><a href="#brand_identity">Brand Identity</a></li>
-          <li><a href="#about_us">About Us</a></li>
-          <li><a href="#contact_us">Contact Us</a></li>
-          <li><a href="#citations">Citations</a></li>
-        </ul>
+      <!-- Navigation for all elements in the style guide -->
+      <nav>
+          <ul>
+            <li><a href="#interactive_elements">Interactive Elements</a></li>
+            <li><a href="#text_elements">Text Elements</a></li>
+            <li><a href="#combined_elements">Combined Elements</a></li>
+            <li><a href="#combined_elements">Product Listing Template</a></li>
+            <li><a href="#combined_elements">Checkout Template</a></li>
+            <li><a href="#brand_identity">Brand Identity</a></li>
+            <li><a href="#about_us">About Us</a></li>
+            <li><a href="#contact_us">Contact Us</a></li>
+            <li><a href="#citations">Citations</a></li>
+          </ul>
       </nav>
+
     </header>
 
-    <!-- INTERACTIVE ELEMENTS -->
-    <section id="interactive_elements">
-      <h1 class="h1-element">Interactive Elements</h1>
 
-      <!-- IN-TEXT LINK -->
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- In-text link -->
+      <!-- Resource from https://www.w3schools.com/html/html_links.asp -->
       <section class="element">
-        <h2>In-text link</h2>
-        <div class="intext-link">
-          <a href="https://www.instagram.com">@littlebee.co</a>
+        <h3>In-text link</h3>
+        <div class="text-link">
+        <a href="https://www.instagram.com">@littlebee.co</a>
         </div>
       </section>
 
-      <!-- NAVIGATION LINK (BUTTON) -->
+
+      <!-- Default Button styling section -->
+      <!-- Resource from https://www.w3schools.com/css/css_navbar.asp -->
       <section class="element">
-        <h2>Navigation Link (Button)</h2>
-        <h3>CSS selector:</h3>
+
+        <h3>Navigation Link</h3>
+
+        <h4>Navigation:</h4>
+        <ul class="nav_link">
+          <li><a href="#interactive_elements">Home</a></li>
+        </ul>
+
+        <h4>CSS selector:</h4>
         <p>.button-nav</p>
-        <h3>Sample code:</h3>
+
+        <h4>Sample code:</h4>
         <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-        <h3>Rendered element:</h3>
+
+        <h4>Rendered element:</h4>
         <a class="button-nav" href="#">Default Button</a>
+
       </section>
 
-      <!-- SUBMIT/RESET BUTTONS -->
+
+      <!-- Submit/Reset Buttons -->
+      <!-- Resource from https://www.w3schools.com/tags/att_button_type.asp -->
       <section class="element">
-        <h2>Submit/Reset Buttons</h2>
+        <h3>Submit/Reset Buttons</h3>
         <div class="submit-reset">
-          <form action="/action_page.php">
+        <form action="/action_page.php">
           <label for="review">Review:</label><br>
-          <input type="text" name="review" placeholder="Comments"><br><br>
-          <input class= "button-submit" type="submit" value="Submit">
-          <input class= "button-reset" type="reset" value="Clear">
+          <input type="text" id="review" name="review" placeholder="Comments"><br><br>
+          <input class = "button-sr" type="submit" value="Submit">
+          <input class = "button-sr" type="reset" value="Clear">
         </form>
         </div>
       </section>
 
-      <!-- TEXT INPUT FIELD WITH LABEL -->
+
+      <!-- Text Input w/ Label -->
+      <!-- Resource from https://www.w3schools.com/tags/tag_input.asp -->
       <section class="element">
-        <h2>Text Input Field with Label</h2>
-        <div class="input-label">
-          <div class="input-column1">
-          <label for="fname">First name:</label>
-          <input type="text" name="fname" placeholder="John">
-          </div>
-          <div class="input-column2">
-          <label for="lname">Last name:</label>
-          <input type="text" name="lname" placeholder="Doe">
-          </div>
+        <h3>Text Input Field with Label</h3>
+        <div class="box-form">
+        <label for="pername">Personalized name:</label>
+        <input type="text" id="pername" name="pname" placeholder="Name">
         </div>
       </section>
 
-      <!-- RADIO BUTTON WITH LABEL -->
+
+      <!-- Radio Button w/ Label -->
+      <!-- Resource from https://www.w3schools.com/tags/att_input_type_radio.asp -->
       <section class="element">
-        <h2>Radio Button with Label</h2>
+        <h3>Radio Button with Label</h3>
         <label class="container">Standard Delivery
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span>
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
         </label>
         <div class="stan-del">
-          <h4> Free shipping for orders over CAD $100!</h4>
-          <p> CAD $8.00 (Orders placed now are expected to arrive in two weeks)</p><br>
+        <h4> Free shipping for orders over CAD $100!</h4>
+        <p> CAD $8.00 (Orders placed now are expected to arrive in two weeks)</p><br>
         </div>
         <label class="container">Express Delivery
-          <input type="checkbox">
-          <span class="checkmark"></span>
+        <input type="checkbox">
+        <span class="checkmark"></span>
         </label>
         <p class="stan-deltwo"> CAD $14.00 (Orders placed now are expected to arrive before a week)</p>
       </section>
 
-      <!-- IMAGE AS A LINK -->
+
+      <!-- Image as Link -->
+      <!-- Resource from https://www.w3schools.com/html/html_images.asp -->
       <section class="element">
-        <h2>Image as a Link</h2>
+        <h3>Image as a Link</h3>
         <div class="product-img">
           <a href="https://www.amazon.ca">
           <img src="images/shampoo.png" alt="Product" class="image-link">
@@ -114,90 +134,83 @@
           </a>
         </div>
       </section>
+
+
     </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-    <!-- TEXT ELEMENTS -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-      <h1 class="h1-element">Text Elements</h1>
+      <h2>Text Elements</h2>
 
-      <!-- HEADINGS -->
-      <section class="element">
-        <h2>Headings</h2>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-      </section>
 
-      <!-- PARAGRAPH -->
+      <!-- Headings -->
+      <!-- Resource from https://www.w3schools.com/html/html_headings.asp -->
       <section class="element">
-        <h2>Paragraph</h2>
-        <div class="paragraph">
-        <p>Little Bee is a company that provides customized and personalized hair care and skin care products for children.
-        The Little Bee company is targeted to babies and children themselves as the products are designed for them. This is also targeted to parents who would like to buy gentle hair care and skin care that is suitable for kids and people who are interested in buying gifts for friends and family. </p>
+        <h3>Headings</h3>
+        <div class = "head">
+          <h2>Heading 1</h2>
+          <h3>Heading 2</h3>
+          <h4>Heading 3</h4>
+          <h5>Heading 4</h5>
         </div>
       </section>
 
-      <!-- NUMBERED LIST -->
+
+      <!-- Paragraphs -->
+      <!-- Resource from https://www.w3schools.com/html/html_paragraphs.asp -->
       <section class="element">
-        <h2>Numbered Lists</h2>
-        <h3>Our Products:</h3>
-        <ol class="num-list">
+        <h3>Paragraphs</h3>
+        <div class = "para">
+        <p>Little Bee is a company that provides customized and personalized hair care and skin care products for children.
+          The Little Bee company is targeted to babies and children themselves as the products are designed for them. This is also targeted to parents who would like to buy gentle hair care and skin care that is suitable for kids and people who are interested in buying gifts for friends and family. </p>
+        </div>
+      </section>
+
+
+      <!-- Numbered Lists -->
+      <!-- Resource from https://www.w3schools.com/html/html_lists_ordered.asp -->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>Our Products</h4>
+        <ol class="num-li">
           <li>Natural ingredients</li>
           <li>Paraben-free</li>
           <li>Sulfate-free</li>
           <li>Biodegradable & Recyclable</li>
         </ol>
       </section>
+
     </section>
+    <!-- // TEXT ELEMENTS SECTION -->
 
-    <!-- COMBINED ELEMENTS -->
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-      <h1 class="h1-element">Combined Elements</h1>
+      <h2>Combined Elements</h2>
 
-      <!-- HEADER -->
+
+      <!-- Navigation bar -->
+      <!-- Resource from https://www.w3schools.com/css/css_navbar.asp -->
       <section class="element">
-        <h2>Header</h2>
-        <div class="top-header">
-            <img src="gift.png" id="img-gift" alt="Gift Wrapping" style="width:25px;height:25px;">
-            <p>Free Gift Wrapping</p>
-            <img src="shipping.png" id="img-shipping" alt="Shipping" style="width:38px;height:25px;">
-            <p>Free Shipping</p>
-            <p id="header-info1">for orders over $100</p>
-            <img src="sample.png" id="img-sample" alt="Sample" style="width:20px;height:30px;">
-            <p>Free Samples</p>
-            <p id="header-info2">for every order</p>
-        </div>
+        <h3>Main Navigation</h3>
+        <ul class="nav_main">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#quiz">Take Quiz</a></li>
+          <li><a href="#contract">Contact</a></li>
+        </ul>
       </section>
 
-      <!-- NAVIGATION BAR -->
+
+      <!-- Product Listing -->
+      <!-- Resource from https://www.w3schools.com/howto/howto_css_product_card.asp -->
       <section class="element">
-        <h2>Navigation Bar</h2>
-        <nav>
-          <ul class="left-nav">
-            <li><a href="pages/Product-Listing.html">Shop</a></li>
-            <li><a href="pages/About.html">About</a></li>
-            <li><a href="pages/Quiz.html">Quiz</a></li>
-            <li><a href="pages/Contact.html">Contact</a></li>
-          </ul>
-
-          <ul class="center-nav">
-            <li><a href="index.html">
-            <img src="lb-home.png" id="lbhome" alt="Little Bee Home" style="width:150px;height:35px;">
-            </a></li>
-          </ul>
-
-          <ul class="right-nav">
-            <li><a href="Shopping-Cart.html">
-            <img src="shopping-bag.png" id="img-bag" alt="Shopping Cart" style="width:20px;height:25px;">
-            </a></li>
-          </ul>
-        </nav>
-      </section>
-
-      <!-- PRODUCT LISTING -->
-      <section class="element">
-        <h2>Product/Service Listing</h2>
+        <h3>Product/Service Listing</h3>
         <div class="prod_container">
 
           <!-- Visual reference for Image as a link
@@ -252,9 +265,10 @@
         </div>
       </section>
 
+
       <!-- Detailed Product View -->
       <section class="element">
-        <h2>Detailed Product View</h2>
+        <h3>Detailed Product View</h3>
         <div class="dtpro_containter">
         <div class="product1">
           <img src="images/shampoo.png" alt="Product" style="width:80%;height:70%;">
@@ -272,9 +286,279 @@
               <input class="button-pr" type="submit" value="Add to Cart">
           </div>
         </div>
-        </div>
+      </div>
         </div>
       </section>
+
+
+      <!-- Payment Form -->
+      <!-- Resource from https://www.w3schools.com/tags/att_button_type.asp -->
+      <section class="element">
+        <h3>Payment Form</h3>
+        <div class="pay-in">
+        <form action="/action_page.php">
+          <label for="pfname">First Name:</label><br>
+          <input type="text" id="pfname" name="pfname" placeholder="e.g. John"><br><br>
+          <label for="lname">Last Name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="e.g. Doe"><br><br>
+          <label for="pemail">Email:</label><br>
+          <input type="text" id="pemail" name="pemail" placeholder="e.g. jdoe@gmail.com"><br><br>
+          <label for="address">Address:</label><br>
+          <input type="text" id="address" name="address" placeholder="Street Address"><br><br>
+          <hr><br>
+          <label for="cnum">Card Number:</label><br>
+          <input type="text" id="cnum" name="cnum" placeholder="**** **** **** ****"><br><br>
+          <label for="cvv">CVV:</label><br>
+          <input type="text" id="cvv" name="cvv" placeholder="***"><br><br>
+          <label for="cdex">Card Expiration:</label><br>
+          <input type="text" id="cdex" name="cdex" placeholder="MM/YY"><br><br><br>
+          <input class="button-pr" type="submit" value="Next">
+          <input class="button-pr" type="reset" value="Clear form">
+        </form>
+        </div>
+      </section>
+
+
+      <!-- Checkout Cart -->
+      <!-- Resource from https://www.w3schools.com/tags/att_button_type.asp -->
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <div class="checkout">
+        <img src="images/shampoo.png" alt="Product" style="width:30%; height:10%;">
+        <hr>
+        <h3>Baby Coconut Moisturizing Shampoo</h3>
+        <h4>Items:</h4>
+        <p>2 items</p>
+        <h4>Total:</h4>
+        <p>$35.00</p>
+        <br>
+        <input class= "button-pr" type="submit" value="Proceed to Next">
+      </div>
+      </section>
+
     </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <!-- BRAND IDENTITY SECTION // -->
+    <section id="brand_identity">
+      <h2>Brand Identity</h2>
+
+      <section class="element">
+        <h3>What does the company do, or offer?</h3>
+        <div class="pstyle">
+        <p>Little Bee is a company that provides customized and personalized hair care and skin care products for children.</p>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Who is the company to potential customers? (as a person)</h3>
+        <div class="pstyle">
+        <p>The Little Bee company is targeted to babies and children themselves as the products are designed for them. This is also targeted to parents who would like to buy gentle hair care and skin care that is suitable for kids and people who are interested in buying gifts for friends and family. </p>
+      </div>
+      </section>
+
+      <section class="element">
+        <h3>Why might this company entice someone to purchase a product or service?</h3>
+        <div class="pstyle">
+        <p>While there are baby hair care and skin care in the market, ingredients of the products are not very transparent - it mostly includes chemicals.</p>
+        <p>The Little Bee company provides hair care and skin care that caters to children’s wants and needs. Little Bee products are only made of natural ingredients and are paraben-free, silicon-free, and sulfate-free. Being environmentally-friendly, all Little Bee products are biodegradable and recyclable. One of Little Bee’s goals is to meet the wants and needs of every single children - they provide customized and personalized hair care and skin care to cater any aesthetic and functional needs by taking quizzes to see what best fits for their children.</p>
+      </div>
+      </section>
+
+      <section class="element">
+        <h3>Fonts</h3>
+        <h4>Font 1: Karla</h4>
+        <div class="pstyle">
+        <p>Karla is used for the company name, title, headings and subheadings.</p>
+        <p>The Kara font is chosen because it is easy to read, making it accessible for people to read, especially children. Since it is a sans-serif font, it provides a modern and clean feel which helps target a younger audience. Additionally, using it for the company name, the simple font makes it easier to distinguish and remember.</p>
+        <img src="images/karla.png" alt="f1" style="width:200px;height:140px;">
+        <br>
+        <h4>Font 2: Inconsolata</h4>
+        <p>Inconsolata is used for the body.</p>
+        <p>The Inconsolata font is chosen to create contrast between the simplistic modern headings/titles. It also creates a typewriter/vintage feel which makes content more personal towards the target audience: children. The Inconsolata font letters have the same width making it easy to read since it is spaced out.</p>
+        <img src="images/inconsolata.png" alt="f2" style="width:500px;height:130px;">
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Colour Palettes</h3>
+        <div class="pstyle">
+        <h4>Beige #FAF7F2</h4>
+        <img src="images/beige.png" alt="c1" style="width:100px;height:100px;">
+        <p>Beige is used as the background of the website and the text color of buttons.</p>
+        <br>
+        <h4>Grey #DCDCDC</h4>
+        <img src="images/grey.png" alt="c2" style="width:100px;height:100px;">
+        <p>Grey is used for any unused/untouched components (ex. buttons) and hints (ex. placeholders in text inputs).</p>
+        <h4>Examples:</h4>
+        <img src="images/g1.png" alt="c2" style="width:50%;height:20%;">
+        <img src="images/g2.png" alt="c2" style="width:55%;height:30%;"><br><br>
+        <h4>Blue #99BDDF</h4>
+        <img src="images/blue.png" alt="c3" style="width:100px;height:100px;">
+        <p>Blue is used as the text color for the navigation menu, hyperlinks, text input box and initial button color.</p>
+        <h4>Examples:</h4>
+        <img src="images/bl1.png" alt="c3" style="width:50%;height:30%;">
+        <img src="images/bl2.png" alt="c3" style="width:25%;height:10%;"><br><br>
+        <h4>Yellow #F8EFAF</h4>
+        <img src="images/yellow.png" alt="c4" style="width:100px;height:100px;">
+        <p>Yellow is used for the hover and focus states of elements (ex. buttons, hyperlinks).</p>
+        <h4>Examples:</h4>
+        <img src="images/y2.png" alt="c4" style="width:55%;height:30%;">
+        <img src="images/y1.png" alt="c4" style="width:15%;height: 5%;"><br><br>
+        <h4>Green #C3D493</h4>
+        <img src="images/green.png" alt="c5" style="width:100px;height:100px;">
+        <p>Green is used as an accent color - text color to highlight important content (ex. bold text).</p>
+        <h4>Examples:</h4>
+        <img src="images/gr1.png" alt="c5" style="width:55%;height:30%;">
+        <br><br>
+        <h4>Black #36383A</h4>
+        <img src="images/black.png" alt="c6" style="width:100px;height:100px;">
+        <p>Black is used as the text color.</p>
+        <h4>Examples:</h4>
+        <img src="images/karla.png" alt="c6" style="width:15%;height:5%;">
+        <img src="images/inconsolata.png" alt="c5" style="width:40%;height:20%;"><br><br>
+      </div>
+      </section>
+
+      <section class="element">
+        <h3>Tone and Language</h3>
+        <div class="pstyle">
+        <p>When writing copy, we should be formal yet be friendly, optimistic and genuine - communicate with respect and honesty. Try to be simple and straightforward, and avoid using complicated deep terminologies as this is target towards kids, parents and anyone who may be interested in the products. Though this is targeted to a younger audience, avoid using slangs! Know when and how use standard capitalization, symbols, numbers and paragraph formats.</p>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Little Bee Visuals</h3>
+        <h4>Potential logo for Little Bee:</h4>
+        <div class="pstyle">
+        <img src="images/logo.png" alt="c6" style="width:15%;height:5%;">
+
+        <h4>Potential visual elements:</h4>
+        <p>These elements can be used in the website and the products (ex. ingredients).</p>
+        <img src="images/flower.png" alt="c6" style="width:15%;height:5%;">
+        <img src="images/blueberry.png" alt="c6" style="width:25%;height:10%;">
+        <p> Having hand-drawn visual elements creates a natural feel similar to the simple ingredients that Little Promotes with their products. It also helps capture children's attention because of its drawing style.</p>
+      </div>
+      </section>
+
+      <section class="element">
+        <h3>Potential Imagery, and, or, art direction</h3>
+        <h4>Inspiration for Little Bee website:</h4>
+        <div class="container">
+        <img src="images/w1.jpeg" alt="w1" style="width:25%;height:10%;">
+        <img src="images/w2.png" alt="w2" style="width:25%;height:10%;">
+        <img src="images/w3.png" alt="w3" style="width:25%;height:10%;">
+        </div>
+
+        <h4>Inspiration for Little Bee products:</h4>
+        <div class="container">
+        <img src="images/p1.jpeg"  alt="p1" style="width:25%;height:10%;">
+        <img src="images/p3.jpeg" alt="p3" style="width:25%;height:10%;">
+        <img src="images/p4.jpeg" alt="p4" style="width:20%;height:5%;">
+      </div>
+      </section>
+
+    </section>
+    <!-- // BRAND IDENTITY SECTION -->
+
+
+
+    <!-- ABOUT US SECTION // -->
+    <section id="about_us">
+      <h2>About the Company</h2>
+
+      <section class="element">
+        <h3>What is Little Bee?</h3>
+        <p>Little Bee is a company that provides customized and personalized hair care and skin care products for children.
+          The Little Bee company is targeted to babies and children themselves as the products are designed for them. This is also targeted to parents who would like to buy gentle hair care and skin care that is suitable for kids and people who are interested in buying gifts for friends and family. </p>
+      </section>
+
+      <section class="element">
+        <h3>Updates on Little Bee</h3>
+        <div class="imp_info">
+        <h4>3-DAY POP UP STORE!</h4>
+        <p>Little Bee is holding a 3-day pop up store in Grandville Island Market from November 4 to November 6 at 12PM and onwards.</p>
+        <h4>Visit the store to get 15% off with purchase over CAD$80!</h4>
+        </div>
+        <div class="submit-reset">
+          <input class = "button-sr" type="submit" value="Learn more">
+        </div>
+
+      </section>
+
+    </section>
+    <!-- // ABOUT US SECTION -->
+
+
+
+    <!-- CONTACT US SECTION // -->
+    <section id="contact_us">
+      <h2>Contact us</h2>
+
+      <section class="element">
+        <h3>Where can you reach us?</h3>
+        <h4>Instagram:</h4>
+        <div class="text-link">
+        <a href="https://www.instagram.com">@littlebee.co</a>
+        </div>
+        <h4>Facebook:</h4>
+        <div class="text-link">
+        <a href="https://www.facebook.com">Little Bee Company</a>
+        </div>
+        <h4>Email:</h4>
+        <div class="text-link">
+        <a href="https://www.gmail.com">littlebeeco@gmail.com</a>
+        </div>
+        <br><br>
+        <h4>Send us a review of our products!</h4>
+        <div class="pay-in">
+        <form action="/action_page.php">
+          <label for="pfname">First Name:</label><br>
+          <input type="text" id="pfname" name="pfname" placeholder="e.g. John"><br><br>
+          <label for="lname">Last Name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="e.g. Doe"><br><br>
+          <label for="pemail">Email:</label><br>
+          <input type="text" id="pemail" name="pemail" placeholder="e.g. jdoe@gmail.com"><br><br>
+          <hr><br>
+          <label for="ordnum">Order Number:</label><br>
+          <input type="text" id="ordnum" name="ordnum" placeholder="e.g. A824JDL"><br><br>
+          <label for="ptype">Product Type & Name:</label><br>
+          <input type="text" id="ptype" name="ptype" placeholder="e.g. Shampoo - Baby Coconut Moisturizing Shampoo"><br><br>
+          <label for="rev">Review:</label><br>
+          <input type="text" id="rev" name="rev" placeholder="Comments"><br><br><br>
+          <input class="button-pr" type="submit" value="Submit">
+          <input class="button-pr" type="reset" value="Clear">
+        </form>
+        </div>
+      </section>
+
+    </section>
+    <!-- // CONTACT US SECTION -->
+
+
+
+    <!-- CITATIONS SECTION // -->
+    <!-- <section id="citations"> -->
+    <footer id="citations">
+      <h2>Citations</h2>
+      <section class="element">
+        <h3>Citations for images, code, etc.</h3>
+        <p>Pinhorn, Jonny. Designer. 2012. <strong>Karla [Font]</strong></p> <div class="text-link"> Retrieved from <a href="https://fonts.google.com/specimen/Karla?query=karla">https://fonts.google.com/specimen/Karla?query=karla</a></div><br>
+        <p>Levien, Raph. Designer. 2020. <strong>Inconsolata [Font]</strong></p> <div class="text-link"> Retrieved from <a href="https://fonts.google.com/specimen/Inconsolata?query=inco">https://fonts.google.com/specimen/Inconsolata?query=inco</a></div><br>
+        <p>Pipette. 2022. <strong>Baby Shampoo + Wash [Image]</strong></p> <div class="text-link"> Retrieved from <a href="https://www.pipettebaby.com/products/shampoo-wash">https://www.pipettebaby.com/products/shampoo-wash</a></div><br>
+        <p>Versed. 2022. <strong>Versed Skin [Image]</strong></p> <div class="text-link"> Retrieved from <a href="https://versedskin.com/collections/vitamin-e">https://versedskin.com/collections/vitamin-e</a></div><br>
+        <p>Function of Beauty. 2022. <strong>Function of Beauty [Web]</strong></p> <div class="text-link"> Retrieved from <a href="https://www.functionofbeauty.com/">https://www.functionofbeauty.com/</a></div><br>
+        <p>Studio Dolphins. 2017. <strong>Agnotis [Image]</strong></p> <div class="text-link"> Retrieved from <a href="https://www.behance.net/gallery/57178437/Agnotis-Baby-Care">https://www.behance.net/gallery/57178437/Agnotis-Baby-Care</a></div><br>
+        <p>Function of Beauty. 2022. <strong>Function of Beauty [Web]</strong></p> <div class="text-link"> Retrieved from <a href="https://www.functionofbeauty.com/">https://www.functionofbeauty.com/</a></div><br>
+        <p>W3schools. 1999-2022. <strong>W3schools [Web]</strong> HTML & CSS codes of the style guide webpage are resourced from W3schools. Specific resource/citations are embedded inside the HTML & CSS files under 'comments' for each section/element.</p> <div class="text-link"> Retrieved from <a href="https://www.w3schools.com/">https://www.w3schools.com//</a></div><br>
+      </section>
+    </footer>
+    <!-- </section> -->
+    <!-- // CITATIONS SECTION -->
+
+
+
   </body>
 </html>
