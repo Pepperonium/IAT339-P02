@@ -775,8 +775,7 @@ hr{
   -ms-flex: 1 1 18em;
   flex: 1 1 20em;
 
-  padding
-  /* padding: 0 1rem; */
+  /* padding: 5 1rem; */
 }
 
 @media (min-width: 50.25em) {
@@ -785,4 +784,11 @@ hr{
 		-ms-order: 2;
 		order: 2;
 	}
+}
+
+#prod-info{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
