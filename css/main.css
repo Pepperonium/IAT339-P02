@@ -742,6 +742,9 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: justify-start;
+
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .about-img{
