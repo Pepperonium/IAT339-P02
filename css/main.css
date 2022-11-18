@@ -829,3 +829,11 @@ hr{
   margin-right: auto;
   width: 50%;
 }
+
+.bottom-right{
+  position:absolute;
+  right: 23rem;
+  top: 98rem;
+  display: flex;
+  flex-shrink: 1;
+}
