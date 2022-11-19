@@ -6,7 +6,7 @@ Default styling for the style guide
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap');
 @font-face {
   font-family: 'SAXmasMood';
-  src: url('SAXmasMood/SAXmasMood.otf') format('opentype');
+  src: url('../SAXmasMood/SAXmasMood.otf') format('opentype');
 }
 
 html {
