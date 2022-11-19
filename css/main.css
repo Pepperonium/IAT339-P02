@@ -909,3 +909,22 @@ hr{
   padding-right: 10px;
   padding-top: 15px;
 }
+
+/* PAYMENT FORM 2 */
+.summary{
+  box-shadow: 1px 2px 8px #E4E3E3;
+  background-color: #FAF7F2;
+  border-radius: 6px;
+}
+
+.contact-ship{
+  display: flex;
+  justify-content: row;
+  align-items: flex-start;
+}
+
+.ship-method{
+  display: flex;
+  justify-content: row;
+  align-items: flex-start;
+}

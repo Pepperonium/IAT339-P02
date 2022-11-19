@@ -56,16 +56,24 @@
     </header>
 
     <body>
+      <div class="payment-info">
       <p>Information & Shipping</p>
-      <img src="../images/arrow.png" alt="arrow" style="width:10px;height:10px;">
+      <img src="../images/arrow.png" id="arrow" alt="arrow" style="width:20px;height:20px;">
       <p>Payment</p>
+      </div>
 
         <h3>Summary</h3>
-        <h4>Contact & Shipping Address</h4>
+      <div class="summary">
+        <div class="contact-ship">
+        <h4>Contact & <br> Shipping Address</h4>
         <p>John Doe, jdoe@gmail.com, +1(778)123-4567, 1021 Robson St #100, Vancouver, BC V6E 4A9</p>
+        </div>
+        <div class="ship-method">
         <h4>Shipping Method</h4>
         <p>Standard Delivery</p>
+        </div>
         <hr>
+        <div class="total">
         <h4>Subtotal</h4>
         <p>$25.00 CAD</p>
         <h4>Taxes</h4>
@@ -74,10 +82,12 @@
         <p>$8.00 CAD</p>
         <h3>Total</h3>
         <h3>$35.00 CAD</h3>
+      </div>
+      </div>
 
         <h3>Payment Information</h3>
         <p>All transactions are secure and encrypted</p>
-        <div class="pay-in">
+        <div class="input-label">
         <form action="../pages/Confirmation.html">
           <label for="pfname">First Name:</label><br>
           <input type="text" id="pfname" name="pfname" placeholder="e.g. John"><br><br>
