@@ -5,8 +5,8 @@ Default styling for the style guide
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap');
 @font-face {
-  font-family: SAXmasMood;
-  src: url("SAXmasMood/SAXmasMood.otf") format("opentype");
+  font-family: 'SAXmasMood';
+  src: url('SAXmasMood/SAXmasMood.otf') format('opentype');
 }
 
 html {
@@ -125,57 +125,6 @@ li a:hover:not(.active) {
   color: #C3D493;
 }
 
-/* NAVIGATION BAR */
-/* nav{
-  background-color: #FAF7F2;
-  padding-top: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-  align-items: center;
-  flex-basis: auto;
-}
-
-.left-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.nav-element li{
-  display: inline-block;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.nav-element{
-  margin-right: auto;
-}
-
-.nav-logo-element li{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-a{
-  padding-right: 20px;
-  text-decoration: none;
-  font-family: 'Karla', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #99BDDF;
-}
-
-a:hover{
-  color: #6C6B6B;
-}
-
-a:active{
-  color: #C3D493;
-} */
 
 * {box-sizing: border-box;}
 
@@ -183,11 +132,59 @@ body {
   margin: 0;
 }
 
+/* Header */
+.top-header {
+  background-color: #F8EFAF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  line-height: 25px;
+}
+
+.top-header h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5D6165;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-header p {
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5D6165;
+  padding-top: 4px;
+  padding-right: 10px;
+}
+
+#img-gift , #img-shipping {
+  margin-top: 1rem;
+}
+
+#img-sample {
+  margin-top: 0.75rem;
+}
+
+.th-1 , .th-2 {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+
+.th-3 {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Navigation Bar */
 .nav-bar {
   overflow: hidden;
   background-color: #FAF7F2;
-  box-shadow: 1px 2px 8px #E4E3E3;
+  /* box-shadow: 1px 2px 8px #E4E3E3; */
   padding: 20px 10px;
 }
 
@@ -231,7 +228,7 @@ body {
   float: right;
 }
 
-/* Responsive Navigation Bar */
+/* Responsive Header and Navigation Bar */
 @media screen and (max-width: 500px) {
   .nav-bar a {
     float: none;
@@ -241,6 +238,16 @@ body {
 
   .nav-right {
     float: none;
+    justify-content: center;
+  }
+
+  .top-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .th-1 , .th-2 , .th-3 {
+    justify-content: center;
   }
 }
 
@@ -551,62 +558,6 @@ input[type="text"]:focus {
   margin-bottom: 0.5rem;
 }
 
-/* HEADER */
-header{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-
-.top-header{
-  background-color: #F8EFAF;
-  color: #5D6165;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
-  flex:1 1 0;
-  align-items: stretch;
-  align-content: stretch;
-}
-
-.top-header p{
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
-  padding-right: 15px;
-  font-size: 14px;
-}
-
-#header-info1{
-  font-family: 'Inconsolata', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-#header-info2{
-  font-family: 'Inconsolata', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-#img-gift{
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-#img-shipping{
-  padding-top: 11px;
-  padding-right: 20px;
-  padding-left: 10px;
-}
-
-#img-sample{
-  padding-top: 8px;
-  padding-right: 20px;
-  padding-left: 10px;
-}
 
 /* PRODUCT LISTING */
 
@@ -780,7 +731,87 @@ header{
 
 /* HOME PAGE */
 /* Main image */
-.main_img_containter {
+.index-section1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.index-section1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+
+.index-section1-left h3 {
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 450;
+  color: #5D6165;
+  width: 70%;
+  line-height: 1.6;
+}
+
+.index-section1-left p {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: #5D6165;
+}
+
+.index-section1-button {
+  padding-top: 30px;
+}
+
+.button-nav {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.75rem;
+  color: #FFFDFB;
+  border-radius: 6px;
+  background-color: #99BDDF;
+  text-decoration: none;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #5D6165;
+  border-radius: 6px;
+  background-color: #F6EEB1;
+  transition-duration: 0.5s;
+}
+
+.index-section1-right {
+  margin-right: 2rem;
+}
+
+.index-section1-right img{
+  max-width: 100%;
+  height: auto;
+}
+
+.index-section2 {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .index-section1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .index-section1-left {
+    order: 2;
+    margin-left: 3.5rem;
+  }
+
+  .index-section1-right {
+    order: 1;
+  }
+}
+/* .main_img_containter {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -794,8 +825,12 @@ header{
 .main_img_containter img{
   z-index: 1;
   position: relative;
+<<<<<<< Updated upstream
   height: 500px;
 }
+=======
+} */
+>>>>>>> Stashed changes
 
 /* .main-img .bottom-left {
   position: absolute;
@@ -805,11 +840,11 @@ header{
   flex-shrink: 1;
 } */
 
-#main_button {
+/* #main_button {
   position: absolute;
   left:5em;
   bottom: 40%;
-}
+} */
 
 /* Our Mission */
 .mission{
