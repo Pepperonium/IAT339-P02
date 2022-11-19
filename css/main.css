@@ -711,10 +711,10 @@ header{
 
 /* HOME PAGE */
 /* Main image */
-.main-img {
+.main_img_containter {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: stretch;
   position: relative;
   text-align: center;
@@ -730,9 +730,9 @@ header{
   flex-shrink: 1;
 } */
 
-.main-img .button-nav{
+.main_img .button-nav{
   position: absolute;
-  top: 0;
+  left: 0;
   z-index: -1;
 }
 
