@@ -782,17 +782,19 @@ header{
 /* Main image */
 .main_img_containter {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
+  /* flex-direction: column;
   align-items: stretch;
   position: relative;
-  text-align: center;
+  text-align: center; */
   color: white;
 }
 
 .main_img_containter img{
   z-index: 1;
   position: relative;
+  height: 500px;
 }
 
 /* .main-img .bottom-left {
