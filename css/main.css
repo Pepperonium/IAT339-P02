@@ -4,15 +4,16 @@ Default styling for the style guide
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: SAXmasMood;
+  src: url("SAXmasMood/SAXmasMood.otf") format("opentype");
+}
 
 html {
   background-color: #FAF7F2;
   color: #5D6165;
 }
 
-body {
-  padding: 2rem;
-}
 
 h1 {
   font-family: 'Karla', sans-serif;
@@ -125,7 +126,7 @@ li a:hover:not(.active) {
 }
 
 /* NAVIGATION BAR */
-nav{
+/* nav{
   background-color: #FAF7F2;
   padding-top: 20px;
   position: -webkit-sticky;
@@ -174,6 +175,73 @@ a:hover{
 
 a:active{
   color: #C3D493;
+} */
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  overflow: hidden;
+  background-color: #FAF7F2;
+  box-shadow: 1px 2px 8px #E4E3E3;
+  padding: 20px 10px;
+}
+
+.nav-bar a {
+  float: left;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  color: #99BDDF;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.nav-right img {
+  margin-top: 0.65rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-bar a.logo {
+  font-family: 'SAXmasMood';
+  font-size: 35px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  color: #5D6165;
+}
+
+.nav-right a:hover {
+  color: #5D6165;
+}
+
+
+.nav-right a.active {
+  color: #C3D493;
+}
+
+.nav-right {
+  float: right;
+}
+
+/* Responsive Navigation Bar */
+@media screen and (max-width: 500px) {
+  .nav-bar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-right {
+    float: none;
+  }
 }
 
 /* IN-TEXT LINK */
