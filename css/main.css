@@ -57,6 +57,28 @@ p {
   color: #C3D493;
 }
 
+/* NAVIGATION LINK (BUTTON) */
+.button-nav {
+  /* display: inline-block; */
+  position: relative;
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 16px;
+  padding: 0.75rem;
+  color: #FFFDFB;
+  border-radius: 6px;
+  background-color: #99BDDF;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  z-index: 10;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #5D6165;
+  border-radius: 6px;
+  background-color: #F6EEB1;
+  transition-duration: 0.5s;
+}
+
 /* MAIN NAV - this is the nav styling for the style guide only */
 .main-nav nav {
   min-width: 377px;
@@ -173,27 +195,6 @@ a:active{
   border-radius: 6px;
   background-color: #F6EEB1;
   color: #5D6165;
-  transition-duration: 0.5s;
-}
-
-/* NAVIGATION LINK (BUTTON) */
-.button-nav {
-  display: inline-block;
-  position: absolute;
-  font-family: 'Inconsolata', sans-serif;
-  font-size: 16px;
-  padding: 0.75rem;
-  color: #FFFDFB;
-  border-radius: 6px;
-  background-color: #99BDDF;
-  text-decoration: none;
-  transition-duration: 0.5s;
-}
-
-.button-nav:hover, .button-nav:focus {
-  color: #5D6165;
-  border-radius: 6px;
-  background-color: #F6EEB1;
   transition-duration: 0.5s;
 }
 
@@ -719,7 +720,11 @@ header{
   position: relative;
   text-align: center;
   color: white;
+}
+
+.main_img_containter img{
   z-index: 1;
+  position: relative;
 }
 
 /* .main-img .bottom-left {
@@ -730,10 +735,10 @@ header{
   flex-shrink: 1;
 } */
 
-.main_img .button-nav{
+#main_button {
   position: absolute;
-  left: 0;
-  z-index: -1;
+  left:5em;
+  bottom: 40%;
 }
 
 /* Our Mission */
