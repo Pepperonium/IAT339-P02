@@ -179,6 +179,7 @@ a:active{
 /* NAVIGATION LINK (BUTTON) */
 .button-nav {
   display: inline-block;
+  position: absolute;
   font-family: 'Inconsolata', sans-serif;
   font-size: 16px;
   padding: 0.75rem;
@@ -713,26 +714,26 @@ header{
 .main-img {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: nowrap;
   align-items: stretch;
-  align-content: flex-start;
   position: relative;
   text-align: center;
   color: white;
+  z-index: 1;
 }
 
-.main_img img {
-  margin-top: 2rem;
-  margin-left: 8rem;
-}
-
-.bottom-left {
-  position:absolute;
+/* .main-img .bottom-left {
+  position: absolute;
   left: 14rem;
   top: 35rem;
   display: flex;
   flex-shrink: 1;
+} */
+
+.main-img .button-nav{
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 /* Our Mission */
