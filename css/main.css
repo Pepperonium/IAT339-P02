@@ -559,30 +559,6 @@ input[type="text"]:focus {
   margin: 1.5rem;
 }
 
-.quiz-section {
-  display: flex;
-  flex-direction: row;
-  margin-top: 0;
-}
-
-.quiz-txt {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-left: 2.5rem;
-  margin-top: 1rem;
-}
-
-.quiz-img {
-  margin-right: 2rem;
-}
-
-.quiz-img img{
-  max-width: 100%;
-  height: auto;
-}
-
 .prod-container {
   display: flex;
   flex-direction: row;
@@ -674,6 +650,7 @@ input[type="text"]:focus {
   -webkit-flex: 1 1 18em;
   -ms-flex: 1 1 18em;
   flex: 1 5 30em;
+  margin-right: 3rem;
 
   /* padding: 5 1rem; */
 }
@@ -685,15 +662,37 @@ input[type="text"]:focus {
 }
 
 .dp-subtext p{
-  padding-right: 15rem;
+  padding-right: 23rem;
   padding-top: 0.2rem;
 }
+
 
 @media (min-width: 50.25em) {
   .box-item-image {
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
+  }
+}
+
+.dp-container hr{
+  height: 2px;
+  background-color: #99BDDF;
+  border: none;
+}
+
+.dp-button{
+  margin-top: 3rem;
+}
+
+.dp-text2{
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .dp-subtext p{
+    padding-right: 10rem;
+    padding-top: 0.2rem;
   }
 }
 /* .dtpro_containter{
@@ -887,7 +886,9 @@ footer {
 
 .footer4 {
   margin-left: 2rem;
+  margin-right: 3rem;
 }
+
 
 /* Gradient Line */
 .gradient-line {
@@ -1120,4 +1121,9 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+/* Quiz Result */
+.quiz-result{
+  margin-left: 1.5rem;
 }
