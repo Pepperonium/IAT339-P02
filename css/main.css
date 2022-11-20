@@ -924,6 +924,7 @@ footer {
 }
 
 .sc-checkout{
+  padding-top: 1.5rem;
   text-align: right;
   margin-right: 2.5rem;
 }
