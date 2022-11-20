@@ -555,6 +555,10 @@ input[type="text"]:focus {
 
 /* PRODUCT LISTING */
 
+.page-content h3{
+  margin: 1.5rem;
+}
+
 .prod-container {
   display: flex;
   flex-direction: row;
@@ -871,7 +875,7 @@ footer {
   background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
 }
 
-/* About Page */
+/* About Page *about/
 .about-page p {
   margin-left: 1.5rem;
   width: 90%;
