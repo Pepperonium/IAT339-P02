@@ -555,7 +555,7 @@ input[type="text"]:focus {
 
 /* PRODUCT LISTING */
 
-.page-content h3{
+.page-content, .dp-text, h3 :not(.dp-text h3){
   margin: 1.5rem;
 }
 
@@ -565,7 +565,6 @@ input[type="text"]:focus {
   justify-content: center;
   flex-wrap: wrap;
   align-items:center;
-  align-content: center;
   align-content: space-between;
 }
 
