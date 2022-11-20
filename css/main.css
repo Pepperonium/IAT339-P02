@@ -126,12 +126,7 @@ li a:hover:not(.active) {
   color: #C3D493;
 }
 
-
 * {box-sizing: border-box;}
-
-body:not(.top-header) {
-  margin: 1em;
-}
 
 /* Header */
 .top-header {
