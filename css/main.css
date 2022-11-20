@@ -128,8 +128,8 @@ li a:hover:not(.active) {
 
 * {box-sizing: border-box;}
 
-body {
-  margin: 0;
+body:not(.top-header) {
+  margin: 1em;
 }
 
 /* Header */
@@ -377,7 +377,7 @@ input[type="text"]:focus {
   font-family: 'Inconsolata', sans-serif;
   font-size: 16px;
   color: #5D6165;
-  width: 40%;
+  width: 100%;
   padding: 10px;
   margin: 8px 1px;
   box-sizing: border-box;
@@ -903,7 +903,7 @@ footer {
 }
 
 .footer3 {
-  text-align: center;
+  text-align:left;
   margin-left: 2rem;
 }
 
