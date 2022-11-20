@@ -948,18 +948,43 @@ footer {
   box-shadow: 1px 2px 8px #E4E3E3;
   background-color: #FAF7F2;
   border-radius: 6px;
+  margin-right: 1.5rem;
 }
 
 .contact-ship{
   display: flex;
   justify-content: row;
   align-items: flex-start;
+
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.contact-ship p{
+  padding-top: 2px;
+  padding-left: 20px;
 }
 
 .ship-method{
   display: flex;
   justify-content: row;
   align-items: flex-start;
+
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-top: 1rem;
+}
+
+.ship-method p{
+  padding-top: 2px;
+  padding-left: 20px;
+}
+
+.total{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .index-section2 {
@@ -979,11 +1004,11 @@ footer {
 }
 
 .button-sr {
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
-/* Payment Page */
-.payment-page {
+/* Payment Page 1 */
+.payment-page1 {
   margin-left: 1.5rem;
 }
 
@@ -1024,4 +1049,19 @@ footer {
   height: 2px;
   background-color: #99BDDF;
   border: none;
+}
+
+.blue-line2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  height: 2px;
+  background-color: #99BDDF;
+  border: none;
+}
+
+/* Payment Page 2 */
+.payment-page2 {
+  margin-left: 1.5rem;
 }
