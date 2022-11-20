@@ -620,7 +620,7 @@ input[type="text"]:focus {
 .dp-container{
   padding-top: 2rem;
   display: -webkit-flex; /* For support in a series of Webkit browsers */
-	display: -ms-flex;
+  display: -ms-flex;
   display: flex;
 
   -webkit-flex-wrap: wrap;
@@ -658,63 +658,63 @@ input[type="text"]:focus {
 }
 
 @media (min-width: 50.25em) {
-	.box-item-image {
-		-webkit-order: 2;
-		-ms-order: 2;
-		order: 2;
-	}
+  .box-item-image {
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+  }
 }
 /* .dtpro_containter{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
 }
 
 .info_list {
-  max-width: 350px;
-  text-align: center;
-  background-color: #FAF7F2;
-  border-radius: 6px;
+max-width: 350px;
+text-align: center;
+background-color: #FAF7F2;
+border-radius: 6px;
 }
 
 .info_list hr{
-  width: 90%;
-  margin-top: 1rem;
-  border: none;
-  height: 2px;
-  background: #095484;
-  background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
+width: 90%;
+margin-top: 1rem;
+border: none;
+height: 2px;
+background: #095484;
+background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
 }
 
 .info_list h3 {
-  text-align: left;
-  font-family: 'Karla', sans-serif;
-  font-style: bold;
-  margin-top: 1.5rem;
-  margin-left: 0.90rem;
-  color: #36383A;
-  font-size: 18px;
+text-align: left;
+font-family: 'Karla', sans-serif;
+font-style: bold;
+margin-top: 1.5rem;
+margin-left: 0.90rem;
+color: #36383A;
+font-size: 18px;
 }
 
 .price {
-  font-family: 'Karla', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding-left: 8rem;
-  color: #36383A;
-  font-size: 20px;
+font-family: 'Karla', sans-serif;
+font-weight: bold;
+text-align: center;
+padding-left: 8rem;
+color: #36383A;
+font-size: 20px;
 }
 
 .info_list p{
-  font-family: 'Inconsolata', sans-serif;
-  text-align: left;
-  font-style: normal;
-  padding: 0.5rem;
-  color: #36383A;
-  font-size: 16px;
+font-family: 'Inconsolata', sans-serif;
+text-align: left;
+font-style: normal;
+padding: 0.5rem;
+color: #36383A;
+font-size: 16px;
 }
 
 /* HOME PAGE */
@@ -800,48 +800,6 @@ input[type="text"]:focus {
     order: 1;
   }
 }
-/* .main_img_containter {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  /* flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  text-align: center; */
-  color: white;
-}
-
-.main_img_containter img{
-  z-index: 1;
-  position: relative;
-<<<<<<< Updated upstream
-  height: 500px;
-}
-=======
-} */
->>>>>>> Stashed changes
-
-/* .main-img .bottom-left {
-  position: absolute;
-  left: 14rem;
-  top: 35rem;
-  display: flex;
-  flex-shrink: 1;
-} */
-
-/* #main_button {
-  position: absolute;
-  left:5em;
-  bottom: 40%;
-} */
-
-/* Our Mission */
-.mission{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  text-align: center;
-}
 
 /* Footer */
 footer {
@@ -909,56 +867,10 @@ footer {
 }
 
 /* ABOUT PAGE */
-.about{
-  padding-top: 2rem
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-	display: -ms-flex;
-  display: flex;
-
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  -webkit-justify-content: space-around;
-  -ms-justify-content: space-around;
-  justify-content: space-around;
-}
-
-.about-img{
-  -webkit-flex: 3 1 400px;
-  -ms-flex: 3 1 400px;
-  flex: 3 1 400px;
-}
-
-.about-text{
-  -webkit-flex: 1 1 18em;
-  -ms-flex: 1 1 18em;
-  flex: 1 1 20em;
-
-  /* padding: 5 1rem; */
-}
-
-@media (min-width: 50.25em) {
-	.box-item-image {
-		-webkit-order: 2;
-		-ms-order: 2;
-		order: 2;
-	}
-}
-
-#prod-info{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.bottom-right{
-  position:absolute;
-  right: 23rem;
-  top: 100rem;
-  display: flex;
-  flex-shrink: 1;
+/* About Page */
+.about-page p {
+  margin-left: 1.5rem;
+  width: 80%;
 }
 
 /* SHOPPING CART */
@@ -1028,4 +940,15 @@ footer {
   display: flex;
   justify-content: row;
   align-items: flex-start;
+}
+
+.index-section2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/* H3 Position */
+.h3-positioning {
+  margin-left: 1.5rem;
 }
