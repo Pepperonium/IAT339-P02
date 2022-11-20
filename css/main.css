@@ -878,9 +878,18 @@ footer {
 }
 
 /* Contact Page */
-.contact-page *:not(.button-submit, .button-reset, .socials, label, hr, a, form) {
+/* .contact-page *:not(.button-submit, .button-reset, .socials, label, hr, a, form) {
   margin-left: 1.5rem;
   width: 90%
+} */
+
+/* Contact page */
+.contact-page {
+  margin-left: 1.5rem;
+}
+.contact-page .intext-link{
+  display: flex;
+  flex-direction: row;
 }
 
 /* SHOPPING CART */
@@ -970,7 +979,7 @@ footer {
 }
 
 .button-sr {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 /* Payment Page */
@@ -978,10 +987,6 @@ footer {
   margin-left: 1.5rem;
 }
 
-/* .contact-page .intext-link{
-  display: flex;
-  flex-direction: row;
-} */
 
 .input-label-row{
   display: flex;
