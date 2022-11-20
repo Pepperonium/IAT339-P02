@@ -559,6 +559,30 @@ input[type="text"]:focus {
   margin: 1.5rem;
 }
 
+.quiz-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+
+.quiz-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.quiz-img {
+  margin-right: 2rem;
+}
+
+.quiz-img img{
+  max-width: 100%;
+  height: auto;
+}
+
 .prod-container {
   display: flex;
   flex-direction: row;
