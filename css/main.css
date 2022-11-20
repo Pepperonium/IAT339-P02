@@ -1069,3 +1069,21 @@ footer {
 .payment-page2 {
   margin-left: 1.5rem;
 }
+
+/* Confirmation Page */
+.confirmation-page {
+  text-align: center;
+}
+.confirmation-page h3{
+  padding-top: 2px;
+}
+
+#order-id{
+  padding-left: 20px;
+  font-size: 18px;
+}
+.order-num{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
