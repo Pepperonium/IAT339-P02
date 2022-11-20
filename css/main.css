@@ -898,6 +898,7 @@ footer {
 /* SHOPPING CART */
 .sc{
   padding-top: 2rem;
+  padding-bottom: 2rem;
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex;
   display: flex;
@@ -924,12 +925,21 @@ footer {
 
 .sc-checkout{
   text-align: right;
+  margin-right: 2.5rem;
+}
+
+.sc-checkout-button{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .checkout{
   box-shadow: 1px 2px 8px #E4E3E3;
   background-color: #FAF7F2;
   border-radius: 6px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
 }
 
 
