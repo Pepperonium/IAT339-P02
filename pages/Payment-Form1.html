@@ -1,160 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Little Bee Payment Form</title>
+    <title>Little Bee Payment Form</title>
 
-  <!-- Connect .css style guide file to html -->
-  <link href="../css/main.css" rel="stylesheet">
+    <!-- Connect .css style guide file to html -->
+    <link href="../css/main.css" rel="stylesheet">
 
-</head>
+  </head>
 
 
-
-<header>
-  <!-- Header -->
-  <div class="top-header">
-    <div class="th-1">
-      <img src="../images/gift.png" id="img-gift" alt="Gift Wrapping" style="width:25px;height:25px;">
-      <h4>Free Gift Wrapping</h4>
-    </div>
-    <div class="th-2">
-      <img src="../images/shipping.png" id="img-shipping" alt="Shipping" style="width:38px;height:25px;">
-      <h4>Free Shipping</h4>
-      <p id="header-info1">for orders over $100</p>
-    </div>
-    <div class="th-3">
-      <img src="../images/sample.png" id="img-sample" alt="Sample" style="width:20px;height:30px;">
-      <h4>Free Samples</h4>
-      <p id="header-info2">for every order</p>
-    </div>
-  </div>
-
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="nav-bar">
-      <a href="../index.html" class="logo">Little Bee</a>
-      <div class="nav-right">
-        <a href="../pages/Product-Listing.html">Shop</a>
-        <a href="../pages/About.html">About</a>
-        <a href="../pages/Quiz.html">Quiz</a>
-        <a href="../pages/Contact.html">Contact</a>
-        <a href="../pages/Shopping-Cart.html">
-          <img src="../images/shopping-bag.png" alt="Shopping Cart" style="width:20px;height:25px;">
-        </a>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<body>
-  <div class="payment-page1">
-    <form action="../pages/Payment-Form2.html">
-      <div class="payment-info">
-        <p >Information & Shipping</p>
-        <img src="../images/arrow.png" id="arrow" alt="arrow" style="width:50px;height:45px;">
-        <p id="payment-txt1">Payment</p>
-      </div>
-
-      <h3>Contact & Shipping Information</h3>
-      <p>Enter your contact information and shipping address</p>
-      <div class="input-label-row">
-        <div class="input-label">
-          <label for="pfname">First Name</label>
-          <input type="text" id="pfname" name="pfname" placeholder="e.g. John">
+  <body>
+    <header>
+      <!-- Header -->
+      <div class="top-header">
+        <div class="th-1">
+          <img src="../images/gift.png" id="img-gift" alt="Gift Wrapping" style="width:25px;height:25px;">
+          <h4>Free Gift Wrapping</h4>
         </div>
-        <div class="input-label-spacing">
-          <div class="input-label">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname" placeholder="e.g. Doe">
+        <div class="th-2">
+          <img src="../images/shipping.png" id="img-shipping" alt="Shipping" style="width:38px;height:25px;">
+          <h4>Free Shipping</h4>
+          <p id="header-info1">for orders over $100</p>
+        </div>
+        <div class="th-3">
+          <img src="../images/sample.png" id="img-sample" alt="Sample" style="width:20px;height:30px;">
+          <h4>Free Samples</h4>
+          <p id="header-info2">for every order</p>
+        </div>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="nav-bar">
+          <a href="../index.html" class="logo">Little Bee</a>
+          <div class="nav-right">
+            <a href="../pages/Product-Listing.html">Shop</a>
+            <a href="../pages/About.html">About</a>
+            <a href="../pages/Quiz.html">Quiz</a>
+            <a href="../pages/Contact.html">Contact</a>
+            <a href="../pages/Shopping-Cart.html">
+              <img src="../images/shopping-bag.png" alt="Shopping Cart" style="width:20px;height:25px;">
+            </a>
           </div>
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="input-label-row">
-        <div class="input-label">
-          <label for="pemail">Email</label>
-          <input type="text" id="pemail" name="pemail" placeholder="e.g. jdoe@gmail.com">
+    <div class="payment-page1">
+      <form action="../pages/Payment-Form2.html">
+        <div class="payment-info">
+          <p >Information & Shipping</p>
+          <img src="../images/arrow.png" id="arrow" alt="arrow" style="width:50px;height:45px;">
+          <p id="payment-txt1">Payment</p>
         </div>
-        <div class="input-label-spacing">
+
+        <h3>Contact & Shipping Information</h3>
+        <p>Enter your contact information and shipping address</p>
+        <div class="input-label-row">
           <div class="input-label">
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="phone" placeholder="+1 000-0000">
+            <label for="pfname">First Name</label>
+            <input type="text" id="pfname" name="pfname" placeholder="e.g. John">
+          </div>
+          <div class="input-label-spacing">
+            <div class="input-label">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="e.g. Doe">
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="input-label-row">
-        <div class="input-label">
-          <label for="country">Country/Region</label>
-          <input type="text" id="country" name="country">
-        </div>
-        <div class="input-label-spacing">
+        <div class="input-label-row">
           <div class="input-label">
-            <label for="city">City</label>
-            <input type="text" id="city" name="city">
+            <label for="pemail">Email</label>
+            <input type="text" id="pemail" name="pemail" placeholder="e.g. jdoe@gmail.com">
+          </div>
+          <div class="input-label-spacing">
+            <div class="input-label">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" placeholder="+1 000-0000">
+            </div>
           </div>
         </div>
-        <div class="input-label-spacing">
+
+        <div class="input-label-row">
           <div class="input-label">
-            <label for="pcode">Postal Code</label>
-            <input type="text" id="pcode" name="pcode">
+            <label for="country">Country/Region</label>
+            <input type="text" id="country" name="country">
+          </div>
+          <div class="input-label-spacing">
+            <div class="input-label">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city">
+            </div>
+          </div>
+          <div class="input-label-spacing">
+            <div class="input-label">
+              <label for="pcode">Postal Code</label>
+              <input type="text" id="pcode" name="pcode">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="input-label-row">
-        <div class="input-label">
-          <label for="address">Address</label>
-          <input type="text" id="address" name="address" placeholder="Street Address">
+        <div class="input-label-row">
+          <div class="input-label">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Street Address">
+          </div>
         </div>
-      </div>
-      <label class="container">Save this information for next time
-        <input type="checkbox" checked="checked">
-        <span class="checkmark"></span>
-      </label>
+        <label class="container">Save this information for next time
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
 
-      <hr class="blue-line">
+        <hr class="blue-line">
 
-      <h3>Shipping Method</h3>
-      <p>Select your preferred method of shipping</p>
+        <h3>Shipping Method</h3>
+        <p>Select your preferred method of shipping</p>
 
-      <label class="container">Standard Delivery
-        <input type="checkbox" checked="checked">
-        <span class="checkmark"></span>
-      </label>
-      <div class="stan-del">
-        <h4> Free shipping for orders over CAD $100!</h4>
-        <p> CAD $8.00 (Orders placed now are expected to arrive in two weeks)</p><br>
-      </div>
-      <label class="container">Express Delivery
-        <input type="checkbox">
-        <span class="checkmark"></span>
-      </label>
-      <p class="stan-deltwo"> CAD $14.00 (Orders placed now are expected to arrive before a week)</p>
-      <hr class="blue-line">
-      <h3>Make someone’s day!</h3>
-      <label class="container">Do you want to gift wrap your order?
-        <input type="checkbox" checked="checked">
-        <span class="checkmark"></span>
-      </label>
-      <div class="input-label-message">
-        <div class="input-label">
-          <label for="message">Message</label>
-          <input type="text" name="message">
+        <label class="container">Standard Delivery
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <div class="stan-del">
+          <h4> Free shipping for orders over CAD $100!</h4>
+          <p> CAD $8.00 (Orders placed now are expected to arrive in two weeks)</p><br>
         </div>
-      </div>
+        <label class="container">Express Delivery
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <p class="stan-deltwo"> CAD $14.00 (Orders placed now are expected to arrive before a week)</p>
+        <hr class="blue-line">
+        <h3>Make someone’s day!</h3>
+        <label class="container">Do you want to gift wrap your order?
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <div class="input-label-message">
+          <div class="input-label">
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message">
+          </div>
+        </div>
 
-      <div class="button-sr">
-        <input class="button-reset" type="reset" value="Clear form">
-        <input class="button-submit" type="submit" value="Next">
+        <div class="button-sr">
+          <input class="button-reset" type="reset" value="Clear form">
+          <input class="button-submit" type="submit" value="Next">
+        </div>
       </form>
-
     </div>
-  </div>
 
     <!-- FOOTER -->
     <hr class="gradient-line">
