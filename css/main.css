@@ -1171,3 +1171,19 @@ footer {
 .quiz-result{
   margin-left: 1.5rem;
 }
+
+/* Style Nav Bar */
+.main-nav ul{
+  list-style: none;
+}
+
+.main-nav{
+  margin-bottom: 5rem;
+}
+.main-nav a{
+  list-style: none;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  color: #99BDDF;
+  font-size: 14px;
+}
