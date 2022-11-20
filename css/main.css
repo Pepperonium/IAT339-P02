@@ -350,26 +350,12 @@ input[type="text"]:focus {
 /* TEXT INPUT FIELD WITH LABEL */
 .input-label {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
-.input-column1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-column2 {
-  display: flex;
   flex-direction: column;
 }
 
 .input-label label {
   font-family: 'Karla', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
   color: #5D6165;
 }
 
@@ -377,7 +363,7 @@ input[type="text"]:focus {
   font-family: 'Inconsolata', sans-serif;
   font-size: 16px;
   color: #5D6165;
-  width: 100%;
+  width: 300px;
   padding: 10px;
   margin: 8px 1px;
   box-sizing: border-box;
@@ -903,7 +889,7 @@ footer {
 }
 
 .footer3 {
-  text-align:left;
+  text-align:center;
   margin-left: 2rem;
 }
 
