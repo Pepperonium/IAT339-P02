@@ -562,15 +562,15 @@ input[type="text"]:focus {
 .quiz-section {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
-.index-section1-left {
+.quiz-txt {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 7rem;
+  margin-left: 2.5rem;
   margin-top: 1rem;
 }
 
@@ -817,13 +817,13 @@ font-size: 16px;
 }
 
 /* Responsive */
-@media screen and (max-width: 500px) {
-  .index-section1 {
+@media screen and (max-width: 800px) {
+  .index-section1, .quiz-section {
     display: flex;
     flex-direction: column;
   }
 
-  .index-section1-left {
+  .index-section1-left , .quiz-txt{
     order: 2;
     margin-left: 3.5rem;
   }
