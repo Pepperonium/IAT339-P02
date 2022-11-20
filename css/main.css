@@ -864,11 +864,16 @@ footer {
   background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
 }
 
-/* ABOUT PAGE */
 /* About Page */
 .about-page p {
   margin-left: 1.5rem;
   width: 90%;
+}
+
+/* Contact Page */
+.contact-page *:not(.button-submit, .button-reset, .socials, label, hr, a, form) {
+  margin-left: 1.5rem;
+  width: 90%
 }
 
 /* SHOPPING CART */
@@ -907,6 +912,7 @@ footer {
   background-color: #FAF7F2;
   border-radius: 6px;
 }
+
 
 /* PAYMENT FORM 1 */
 .payment-info{
