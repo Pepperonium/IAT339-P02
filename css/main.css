@@ -41,6 +41,7 @@ h4 {
 
 p {
   font-family: 'Inconsolata', sans-serif;
+  line-height: 1.6;
   color: #5D6165;
 }
 
@@ -202,7 +203,7 @@ body:not(.top-header) {
 }
 
 .nav-right img {
-  margin-top: 0.65rem;
+  /* margin-top: 0.3rem; */
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -504,8 +505,10 @@ input[type="text"]:focus {
 }
 
 .text-img {
+  font-family: 'Inconsolata', sans-serif;
   color: #FAF7F2;
   font-size: 16px;
+  font-weight: 500;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -547,9 +550,17 @@ input[type="text"]:focus {
 
 /* PRODUCT LISTING */
 
+.prod-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items:center;
+  align-content: center;
+  align-content: space-between;
+}
+
 .product {
-  /* display: flex;
-  flex: 1; */
   margin: 1%;
   box-shadow: 1px 2px 8px #E4E3E3;
   max-width: 350px;
@@ -558,7 +569,7 @@ input[type="text"]:focus {
   border-radius: 6px;
 }
 
-.product hr{
+.product hr {
   width: 90%;
   margin-top: 2rem;
   border: none;
@@ -570,48 +581,39 @@ input[type="text"]:focus {
 .product h3 {
   text-align: center;
   font-family: 'Karla', sans-serif;
-  font-style: normal;
   margin-top: 1.5rem;
   margin-left: 0.80rem;
-  color: #36383A;
-  font-size: 16px;
+  color: #5D6165;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .price {
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: bold;
   text-align: center;
   padding-left: 8rem;
-  color: #36383A;
+  font-weight: 600;
+  color: #5D6165;
   font-size: 20px;
 }
 
-.product p{
-  font-family: 'Inconsolata', sans-serif;
+.product p {
+  font-family: 'Karla', sans-serif;
   text-align: left;
-  font-style: normal;
+  font-weight: 600;
   padding: 1rem;
-  color: #36383A;
+  color: #5D6165;
   font-size: 16px;
 }
 
-.product img{
+.product img {
   margin: 1rem;
 }
 
 .product img:hover {
   box-shadow: 1px 2px 8px #E4E3E3;
   background-color: #C3D493;
-}
-
-.prod_container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items:center;
-  align-content: center;
-  align-content: space-between;
 }
 
 /* DETAILED PRODUCT */
@@ -899,6 +901,7 @@ footer {
 
 /* Gradient Line */
 .gradient-line {
+  margin-top: 2rem;
   border: none;
   height: 2px;
   background: #095484;
