@@ -856,68 +856,68 @@ input[type="text"]:focus {
 }
 
 /* Footer */
-hr{
-  margin-top: 50px;
-  margin-bottom: 30px;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.footer1 {
+  padding-top: 20px;
+}
+
+.input-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer1 a.button-nav{
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 45px;
+}
+
+/* Text and Input Label */
+.input-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label label {
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  color: #5D6165;
+}
+
+.footer2 {
+  margin-left: 2rem;
+}
+
+/* Intext Link */
+.footer2 h4 {
+  text-align: center;
+}
+
+.footer3 {
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.footer4 {
+  margin-left: 2rem;
+}
+
+/* Gradient Line */
+.gradient-line {
   border: none;
   height: 2px;
   background: #095484;
   background-image: linear-gradient(to right, #99BDDF, #F8EFAF, #C3D493);
 }
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
-.footer label {
-  font-family: 'Karla', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  color: #5D6165;
-}
-
-.footer input[type="text"] {
-  font-family: 'Inconsolata', sans-serif;
-  font-size: 16px;
-  color: #5D6165;
-  width: 40%;
-  padding: 10px;
-  margin: 8px 1px;
-  box-sizing: border-box;
-  border: 2px solid #99BDDF;
-  border-radius: 6px;
-  transition: 0.5s;
-  outline: none;
-  background-color: #FAF7F2;
-}
-
-.footer input[type="text"]:hover {
-  outline: none;
-  border: 2px solid #F8EFAF;
-  border-radius: 6px;
-}
-
-.footer input[type="text"]:focus {
-  outline: none;
-  border: 2px solid #F8EFAF;
-  border-radius: 6px;
-  color: #36383A;
-  background-color: #FBF7DD;
-}
-
-.input-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-} */
 
 /* ABOUT PAGE */
 .about{
