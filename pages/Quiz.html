@@ -45,9 +45,9 @@
         <div class="nav-right">
           <a href="../pages/Product-Listing.html">Shop</a>
           <a href="../pages/About.html">About</a>
-          <a href="../pages/Quiz.html">Quiz</a>
+          <a class="active" href="../pages/Quiz.html">Quiz</a>
           <a href="../pages/Contact.html">Contact</a>
-          <a href="Shopping-Cart.html">
+          <a href="../pages/Shopping-Cart.html">
             <img src="../images/shopping-bag.png" alt="Shopping Cart" style="width:20px;height:25px;">
           </a>
         </div>
@@ -57,6 +57,7 @@
 
 
   <body>
+    <div class="quiz-page">
     <h3>Let’s get to know your little one</h3>
     <p>Take the quiz to see what product fits your child’s needs!</p>
     <h3>What is their skin type?</h3>
@@ -72,7 +73,7 @@
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <br>
+
     <h3>How sensitive is their skin?</h3>
     <label class="container">Rarely
     <input type="checkbox" checked="checked">
@@ -86,7 +87,7 @@
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <br>
+
     <h3>Skin goals?</h3>
     <label class="container">Minimize redness
     <input type="checkbox" checked="checked">
@@ -112,7 +113,7 @@
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <br>
+
     <h3>Select Fragrance?</h3>
     <label class="container">Honey (Bee Special)
     <input type="checkbox" checked="checked">
@@ -122,37 +123,46 @@
     <input type="checkbox" checked="checked">
     <span class="checkmark"></span>
     </label>
+    <br>
     <h3>Make it special!</h3>
     <p>Personalize their skincare product by adding a name (optional)</p>
    <div class="input-label">
-   <input type="text" id="pfname" name="pfname" placeholder="e.g. John"><br><br>
+   <input type="text" id="pfname" name="pfname" placeholder="e.g. John">
     </div>
+    <div class="button-sr">
     <a class="button-submit" href="Quiz-Result.html">Submit</a>
     <a class="button-reset" href="Quiz-Result.html">Clear</a>
+  </div>
 
     <!-- FOOTER -->
-    <hr>
-    <div class="footer">
-      <div class="input-column1">
-        <label for="signup">Sign up to get 15% OFF your first order</label>
-        <div class="input-row">
-          <input type="text" name="email" placeholder="Email Address">
-          <a class="button-nav" href="#">Submit</a>
+    <hr class="gradient-line">
+
+    <footer>
+      <div class="footer1">
+        <div class="input-label">
+          <label for="signup">Sign up to get 15% OFF your first order</label>
+          <div class="input-button">
+            <input type="text" name="email" placeholder="Email Address">
+            <a class="button-nav" href=#>Submit</a>
+          </div>
         </div>
       </div>
-      <div class="info">
-        <h4>Info</h4>
+      <div class="footer2">
+        <h4>Contact Us</h4>
         <div class="intext-link">
-          <a href="#">FAQ</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="https://instagram.com">Instagram</a>
+          <a href="https://facebook.com">Facebook</a>
+          <a href="https://mail.google.com">Email</a>
         </div>
       </div>
-      <div class="mail-address">
+      <div class="footer3">
         <h4>Mailing Address</h4>
-        <p>4700 Kingsway, Burnaby, BC V5H 4M1</p>
+        <p>4700 Kingsway, Burnaby <br> BC V5H 4M1</p>
       </div>
-    </div>
+      <div class="footer4">
+        <p>© Little Bee 2022</p>
+      </div>
+    </footer>
 
   </body>
 

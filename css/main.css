@@ -399,8 +399,8 @@ input[type="text"]:focus {
 }
 
 .container {
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
   font-family: 'Karla', sans-serif;
 }
 .container input {
@@ -865,7 +865,7 @@ footer {
 /* About Page */
 .about-page p {
   margin-left: 1.5rem;
-  width: 80%;
+  width: 90%;
 }
 
 /* SHOPPING CART */
@@ -946,4 +946,13 @@ footer {
 /* H3 Position */
 .h3-positioning {
   margin-left: 1.5rem;
+}
+
+/* Quiz Page */
+.quiz-page {
+  margin-left: 1.5rem;
+}
+
+.button-sr {
+  padding-top: 20px;
 }
