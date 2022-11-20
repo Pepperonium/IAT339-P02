@@ -1001,6 +1001,16 @@ footer {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 500px) {
+  .input-label-row{
+    display: flex;
+    flex-direction: column;
+  }
+  .input-label-spacing{
+    padding-left: 0.5px;
+  }
+}
+
 /* Blue Line */
 .blue-line {
   margin-top: 2rem;
