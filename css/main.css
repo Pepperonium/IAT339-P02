@@ -130,6 +130,9 @@ li a:hover:not(.active) {
 }
 
 * {box-sizing: border-box;}
+body{
+  margin: 0;
+}
 
 /* Header */
 .top-header {
@@ -212,6 +215,10 @@ li a:hover:not(.active) {
   font-weight: normal;
   letter-spacing: 0.5px;
   color: #5D6165;
+}
+
+.nav-bar a.logo:hover {
+  color: #99BDDF;
 }
 
 .nav-right a:hover {
@@ -964,4 +971,42 @@ footer {
 
 .button-sr {
   padding-top: 20px;
+}
+
+/* Payment Page */
+.payment-page {
+  margin-left: 1.5rem;
+}
+
+/* .contact-page .intext-link{
+  display: flex;
+  flex-direction: row;
+} */
+
+.input-label-row{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.input-label-spacing{
+  padding-left: 10px;
+}
+
+#payment-txt1 {
+  color: #DCDCDC;
+}
+
+.input-label-message {
+  padding-top: 20px;
+}
+
+/* Blue Line */
+.blue-line {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+  height: 2px;
+  background-color: #99BDDF;
+  border: none;
 }
